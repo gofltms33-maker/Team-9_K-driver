@@ -10,7 +10,7 @@
 
 원본 학습 명령은 이전 PC의 절대 경로를 포함한다. 데이터 및 경로를 준비한 뒤 실행해야 한다. 원래 시연 NPZ가 모두 제공되지 않아 동일 학습의 완전한 재현은 불가능하다.
 
-## P1~P9 / DQN
+## P1\~P9 / DQN
 
 - [train.py](../DQN/train.py), [train_bc.py](../DQN/train_bc.py)
 - [PPO](../DQN/algorithms/ppo.py), [DQN](../DQN/algorithms/dqn.py), [BC](../DQN/algorithms/bc.py)

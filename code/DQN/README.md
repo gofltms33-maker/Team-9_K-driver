@@ -1,8 +1,8 @@
-# DQN · 초기 PPO P1~P9
+# DQN · 초기 PPO P1\~P9
 
 [프로젝트 홈](../../README.md) · [전체 코드 안내](../README.md) · [BC+PPO](../BC_PPO/README.md)
 
-`K-Driver_P1-P9, DQN.zip`의 구현을 정리한 폴더입니다. 기존 `code/K-Driver/`에서 위치만 변경했으며 DQN과 P1~P9가 공유하는 환경·학습 코드와 모델·실험 기록을 함께 보존했습니다.
+`K-Driver_P1-P9, DQN.zip`의 구현을 정리한 폴더입니다. 기존 `code/K-Driver/`에서 위치만 변경했으며 DQN과 P1\~P9가 공유하는 환경·학습 코드와 모델·실험 기록을 함께 보존했습니다.
 
 ## 실행 준비
 
@@ -50,7 +50,7 @@ python view_road.py --play
 | [utils/](utils/) | 정책 네트워크·버퍼·평가·로깅 |
 | [models/DQN_final_C4_870k.pt](models/DQN_final_C4_870k.pt) | 최종 DQN 가중치 |
 | [models/PPO_v1_best_720k.pt](models/PPO_v1_best_720k.pt) | 초기 PPO 비교 가중치 |
-| [experiments/](experiments/) | P1~P9·DQN 실험 설정, 가중치, 학습·평가 기록 |
+| [experiments/](experiments/) | P1\~P9·DQN 실험 설정, 가중치, 학습·평가 기록 |
 | [collect_pomdp_data.py](collect_pomdp_data.py) | 데이터 수집; 현재 정책 옵션은 random·keep-lane·PPO·BC이며 DQN 옵션 없음 |
 
 팀 최종 선정 순수 PPO 모델은 별도의 [ppo_v1_parallel](../../ppo_v1_parallel/README.md)에 있습니다. 이 폴더의 DQN·초기 PPO와 구분합니다.

@@ -37,7 +37,7 @@ code/
 
 | 패키지 | 내용 | 실행 안내 |
 |---|---|---|
-| [DQN](DQN/) | Double DQN, 초기 PPO P1~P9 실험, 최종 가중치·기록 | [DQN README](DQN/README.md) |
+| [DQN](DQN/) | Double DQN, 초기 PPO P1\~P9 실험, 최종 가중치·기록 | [DQN README](DQN/README.md) |
 | [BC_PPO](BC_PPO/) | v118 round004, 가감속 고정·차로 변경 PPO, 고정 fixture | [BC+PPO README](BC_PPO/README.md) |
 | [팀 최종 순수 PPO](../ppo_v1_parallel/) | SAFE13·17의 7:3 혼합 + B·Y·S | [최종 모델 평가](../Evaluation/README.md) |
 
@@ -47,6 +47,6 @@ code/
 
 ## 재현 범위
 
-BC+PPO는 과거 평가 환경(prefill OFF), P1~P9/DQN은 별도 환경을 사용하므로 결과를 동일 조건의 비교로 간주하지 않는다. BC+PPO 원본 시연 NPZ 일부가 유실되었고 이 묶음에도 시연 NPZ가 없으므로 당시 전체 학습의 완전한 재현은 불가능하다. 제공된 가중치로 주행 실행을 시도할 수 있다. 원본 코드는 변경하지 않았으며 이번 정리에서 SUMO 전체 주행 및 재학습은 검증하지 않았다.
+BC+PPO는 과거 평가 환경(prefill OFF), P1\~P9/DQN은 별도 환경을 사용하므로 결과를 동일 조건의 비교로 간주하지 않는다. BC+PPO 원본 시연 NPZ 일부가 유실되었고 이 묶음에도 시연 NPZ가 없으므로 당시 전체 학습의 완전한 재현은 불가능하다. 제공된 가중치로 주행 실행을 시도할 수 있다. 원본 코드는 변경하지 않았으며 이번 정리에서 SUMO 전체 주행 및 재학습은 검증하지 않았다.
 
 발표 PDF와 Hugging Face 데이터셋 링크는 실제 공개 링크 확정 후 프로젝트 페이지에 추가한다.

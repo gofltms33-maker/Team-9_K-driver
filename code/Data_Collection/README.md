@@ -3,9 +3,9 @@
 | 모델 | 데이터 수집 코드 |
 |---|---|
 | BC + PPO | [collect_audited_course_data.py](../BC_PPO/collect_audited_course_data.py), [train_bc_ppo.py](../BC_PPO/train_bc_ppo.py) |
-| P1~P9 / DQN | [collect_pomdp_data.py](../DQN/collect_pomdp_data.py), [step_recorder.py](../DQN/env/step_recorder.py) |
+| P1\~P9 / DQN | [collect_pomdp_data.py](../DQN/collect_pomdp_data.py), [step_recorder.py](../DQN/env/step_recorder.py) |
 
-P1~P9/DQN 모델 폴더에서 수집 코드 옵션을 확인한다.
+P1\~P9/DQN 모델 폴더에서 수집 코드 옵션을 확인한다.
 
 ```cmd
 python collect_pomdp_data.py --help

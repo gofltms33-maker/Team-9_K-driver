@@ -12,11 +12,11 @@ sumo --version
 
 BC+PPO: 저장소 루트에서 `cd code\BC_PPO` 후 `python -m pip install -r requirements.txt`. 원본 고정 버전의 설치 가능 여부를 확인한다. SUMO의 Python 도구도 필요하다.
 
-P1~P9/DQN: 저장소 루트에서 `cd code\DQN` 후 `python -m pip install torch numpy gymnasium matplotlib tensorboard traci sumolib`. GUI 없는 libsumo 실행을 원하면 호환되는 libsumo를 별도로 설치한다. 이 의존성 목록은 소스 import를 바탕으로 정리했으며 버전 호환성은 검증하지 않았다.
+P1\~P9/DQN: 저장소 루트에서 `cd code\DQN` 후 `python -m pip install torch numpy gymnasium matplotlib tensorboard traci sumolib`. GUI 없는 libsumo 실행을 원하면 호환되는 libsumo를 별도로 설치한다. 이 의존성 목록은 소스 import를 바탕으로 정리했으며 버전 호환성은 검증하지 않았다.
 
 ## 도로 및 환경 코드
 
-| 파일 | BC+PPO | P1~P9/DQN |
+| 파일 | BC+PPO | P1\~P9/DQN |
 |---|---|---|
 | 환경 구현 | [sumo_env.py](../BC_PPO/env/sumo_env.py) | [sumo_env.py](../DQN/env/sumo_env.py) |
 | 도로 생성 | [road_builder.py](../BC_PPO/env/road_builder.py) | [road_builder.py](../DQN/env/road_builder.py) |
@@ -24,4 +24,4 @@ P1~P9/DQN: 저장소 루트에서 `cd code\DQN` 후 `python -m pip install torch
 | 관측·행동·보상 | [mdp_config.py](../BC_PPO/env/mdp_config.py) | [mdp_config.py](../DQN/env/mdp_config.py) |
 | SUMO 파일 | [fixture/sumo](../BC_PPO/fixture/sumo/) | [env/sumo](../DQN/env/sumo/) |
 
-P1~P9/DQN 도로 확인: 해당 모델 폴더에서 `python view_road.py --play`. BC+PPO는 고정 fixture를 사용한다.
+P1\~P9/DQN 도로 확인: 해당 모델 폴더에서 `python view_road.py --play`. BC+PPO는 고정 fixture를 사용한다.
