@@ -1,6 +1,6 @@
 # K-Driver
 
-> 추가 구현: [PPO 병렬 학습·평가·주행 데이터 수집 (`ppo_v1_parallel/`)](ppo_v1_parallel/README.md)
+> 최종 코드: [PPO 병렬 학습·평가·주행 데이터 수집 (`ppo_v1_parallel/`)](ppo_v1_parallel/README.md)
 
 ### 성균관대학교 자율주행인공지능제어 9조 프로젝트
 
