@@ -6,7 +6,6 @@ SUMO 기반 도심 자율주행 환경을 구축하고, 다양한 일반 차량(
 
 PPO, BC+PPO, DQN의 학습 과정과 실패 원인을 분석하고, 교통 혼잡 상황에서의 주행 안전성과 완주 성능을 개선하였습니다.
 
-[GitHub Code](https://github.com/gofltms33-maker/Team-9_K-driver) | [Code & Reproduction](code/README.md)
 
 ---
 
