@@ -16,7 +16,7 @@
 ## 모델별 소스
 
 ```text
-code/
+DQN_BC_PPO/
 ├── DQN/               # K-Driver_P1-P9, DQN.zip: DQN + 초기 PPO P1~P9
 │   ├── README.md
 │   ├── train.py / test.py

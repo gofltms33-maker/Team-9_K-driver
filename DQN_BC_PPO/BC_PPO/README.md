@@ -2,14 +2,14 @@
 
 [프로젝트 홈](../../README.md) · [전체 코드 안내](../README.md) · [DQN·초기 PPO](../DQN/README.md)
 
-`BC_PPO model.zip`의 **v118 round004** 모델 패키지입니다. 기존 `code/BC_PPO_13p33_share/`에서 위치만 변경했습니다. BC로 확보한 가감속·주행망을 고정하고 PPO로 차로 변경 보정층을 학습한 구현입니다.
+`BC_PPO model.zip`의 **v118 round004** 모델 패키지입니다. 기존 `DQN_BC_PPO/BC_PPO_13p33_share/`에서 위치만 변경했습니다. BC로 확보한 가감속·주행망을 고정하고 PPO로 차로 변경 보정층을 학습한 구현입니다.
 
 ## 실행 준비와 주행 재생
 
 SUMO를 설치하고 `SUMO_HOME`을 지정한 뒤 저장소 루트에서 실행합니다. 원본 설명서의 평가 환경은 SUMO 1.27.1입니다.
 
 ```powershell
-cd code/BC_PPO
+cd DQN_BC_PPO/BC_PPO
 python -m pip install -r requirements.txt
 
 # 당시 고정 환경에서 GUI 재생

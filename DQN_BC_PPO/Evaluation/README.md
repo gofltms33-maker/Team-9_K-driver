@@ -5,7 +5,7 @@
 저장소 루트에서:
 
 ```cmd
-cd code\BC_PPO
+cd DQN_BC_PPO\BC_PPO
 python run_model.py --seed 1024000
 python run_model.py --nogui --seed 1024000 --episodes 2
 ```
@@ -19,7 +19,7 @@ python run_model.py --nogui --seed 1024000 --episodes 2
 새 CMD 또는 저장소 루트에서:
 
 ```cmd
-cd code\DQN
+cd DQN_BC_PPO\DQN
 python test.py models\DQN_final_C4_870k.pt --algorithm dqn --side-scan on --warmup 200 --warmup-jitter 100 --episodes 1
 python test.py models\DQN_final_C4_870k.pt --algorithm dqn --side-scan on --warmup 200 --warmup-jitter 100 --nogui --episodes 100
 ```

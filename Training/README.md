@@ -44,8 +44,8 @@ python Training/train.py --resume results/SAFE13_20261125_185902
 
 ## 다른 알고리즘
 
-- BC + PPO: [기존 패키지](../code/BC_PPO/)와 [학습 안내](../code/Training/README.md)
-- 초기 PPO P1\~P9·Double DQN: [기존 구현](../code/DQN/)
+- BC + PPO: [기존 패키지](../DQN_BC_PPO/BC_PPO/)와 [학습 안내](../DQN_BC_PPO/Training/README.md)
+- 초기 PPO P1\~P9·Double DQN: [기존 구현](../DQN_BC_PPO/DQN/)
 - 실패 원인과 정량 결과: [최종 발표 기반 보고서](../docs/PROJECT_REPORT.md#4-av-training-and-problem-solving)
 
 기존 패키지는 모델별 관측·의존성이 다르므로 해당 폴더 안내에 따라 실행합니다.

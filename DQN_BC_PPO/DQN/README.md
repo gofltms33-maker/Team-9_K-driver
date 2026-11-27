@@ -2,14 +2,14 @@
 
 [프로젝트 홈](../../README.md) · [전체 코드 안내](../README.md) · [BC+PPO](../BC_PPO/README.md)
 
-`K-Driver_P1-P9, DQN.zip`의 구현을 정리한 폴더입니다. 기존 `code/K-Driver/`에서 위치만 변경했으며 DQN과 P1\~P9가 공유하는 환경·학습 코드와 모델·실험 기록을 함께 보존했습니다.
+`K-Driver_P1-P9, DQN.zip`의 구현을 정리한 폴더입니다. 기존 `DQN_BC_PPO/K-Driver/`에서 위치만 변경했으며 DQN과 P1\~P9가 공유하는 환경·학습 코드와 모델·실험 기록을 함께 보존했습니다.
 
 ## 실행 준비
 
 저장소 루트에서 다음 명령을 실행합니다. SUMO는 별도 설치하고 `SUMO_HOME`과 `PATH`를 설정합니다. [환경 안내](../Environment/README.md)를 참고합니다.
 
 ```powershell
-cd code/DQN
+cd DQN_BC_PPO/DQN
 python -m pip install torch numpy gymnasium matplotlib tensorboard traci sumolib
 ```
 
@@ -17,7 +17,7 @@ python -m pip install torch numpy gymnasium matplotlib tensorboard traci sumolib
 
 ## 최종 DQN 평가
 
-아래 명령은 `code/DQN/` 안에서 실행합니다.
+아래 명령은 `DQN_BC_PPO/DQN/` 안에서 실행합니다.
 
 ```powershell
 # GUI 재생

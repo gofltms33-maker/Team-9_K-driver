@@ -45,7 +45,7 @@ Team-9_K-driver/
 │   ├── env/             # SUMO 환경·도로·관측·보상·기록기
 │   ├── utils/           # 네트워크·버퍼·병렬 환경·평가
 │   └── results/         # SAFE 실험 및 MIX 최종 가중치
-├── code/
+├── DQN_BC_PPO/
 │   ├── DQN/             # Double DQN + 초기 PPO P1~P9
 │   └── BC_PPO/          # BC 모방학습 + PPO 보완학습
 ├── docs/                 # 최종 발표 기반 상세 보고서
@@ -53,7 +53,7 @@ Team-9_K-driver/
 └── requirements.txt
 ```
 
-네 분류 폴더의 실행 파일은 `ppo_v1_parallel/`의 공통 소스를 사용합니다. 기존 `code/`의 구현은 해당 폴더의 [안내](code/README.md)에 따라 독립적으로 실행합니다.
+네 분류 폴더의 실행 파일은 `ppo_v1_parallel/`의 공통 소스를 사용합니다. 기존 `DQN_BC_PPO/`의 구현은 해당 폴더의 [안내](DQN_BC_PPO/README.md)에 따라 독립적으로 실행합니다.
 
 ## Installation
 
@@ -132,8 +132,8 @@ python Data_Collection/collect.py --part 1 --rows 3334000 --workers 8
 
 | 모델 | 완주율 | 충돌률 | 평가 조건 | 코드 |
 |---|---:|---:|---|---|
-| BC + PPO | 85.00% | 13.33% | 교통 사전 형성 없음 | [BC+PPO](code/BC_PPO/) |
-| Double DQN D4 | 58.00% | 7.00% | 교통 사전 형성, 100회 | [DQN](code/DQN/) |
+| BC + PPO | 85.00% | 13.33% | 교통 사전 형성 없음 | [BC+PPO](DQN_BC_PPO/BC_PPO/) |
+| Double DQN D4 | 58.00% | 7.00% | 교통 사전 형성, 100회 | [DQN](DQN_BC_PPO/DQN/) |
 | **PPO 7:3 + B·Y·S** | **85.25%** | **3.25%** | **교통 사전 형성, 400회** | [최종 가중치](ppo_v1_parallel/results/MIX13x17_w70/model.pt) |
 
 평가 횟수·관측·교통 조건이 달라 동일 조건의 알고리즘 성능 비교로 해석할 수는 없습니다. [상세 보고서](docs/PROJECT_REPORT.md)에 P1\~P9, BC 보완학습, DQN D1\~D4, PPO SAFE·혼합 실험과 남은 과제를 정리했습니다.
@@ -150,6 +150,6 @@ python Data_Collection/collect.py --part 1 --rows 3334000 --workers 8
 
 - [상세 프로젝트 보고서](docs/PROJECT_REPORT.md): 최종 PPT 기반 실험 과정·평가·역할 분담
 - [PPO 원본 구현 안내](ppo_v1_parallel/README.md): 파일별 구성과 원본 CLI 사용법
-- [기존 BC+PPO·DQN 안내](code/README.md)
+- [기존 BC+PPO·DQN 안내](DQN_BC_PPO/README.md)
 - [제출용 저장소 링크](https://github.com/gofltms33-maker/Team-9_K-driver): 프로젝트 페이지에서 연결할 코드 URL
 

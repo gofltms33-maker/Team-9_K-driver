@@ -609,7 +609,7 @@ Team-9_K-driver/
 │   ├── algorithms/ / env/ / utils/
 │   └── results/ (SAFE5·11·13·17 및 MIX13x17)
 │
-└── code/
+└── DQN_BC_PPO/
     ├── README.md
     │
     ├── Environment/
@@ -630,17 +630,17 @@ Team-9_K-driver/
 
 | Category | Description |
 |---|---|
-| [Environment](../code/Environment/README.md) | SUMO 도로 구조, AV 및 HV 환경, 관측 및 행동 설정 |
-| [Training](../code/Training/README.md) | BC, PPO, DQN 학습 코드 |
-| [Evaluation](../code/Evaluation/README.md) | 학습 모델 평가 및 SUMO 주행 재현 |
-| [Data Collection](../code/Data_Collection/README.md) | 주행 데이터 수집 및 데이터셋 생성 |
+| [Environment](../DQN_BC_PPO/Environment/README.md) | SUMO 도로 구조, AV 및 HV 환경, 관측 및 행동 설정 |
+| [Training](../DQN_BC_PPO/Training/README.md) | BC, PPO, DQN 학습 코드 |
+| [Evaluation](../DQN_BC_PPO/Evaluation/README.md) | 학습 모델 평가 및 SUMO 주행 재현 |
+| [Data Collection](../DQN_BC_PPO/Data_Collection/README.md) | 주행 데이터 수집 및 데이터셋 생성 |
 
 ### Model Source Code
 
 | Model | Source Code |
 |---|---|
-| BC + PPO | [BC_PPO](../code/BC_PPO/) |
-| Initial PPO and DQN | [K-Driver](../code/DQN/) |
+| BC + PPO | [BC_PPO](../DQN_BC_PPO/BC_PPO/) |
+| Initial PPO and DQN | [K-Driver](../DQN_BC_PPO/DQN/) |
 | Final PPO | [ppo_v1_parallel](../ppo_v1_parallel/README.md) · [7:3 혼합 모델](../ppo_v1_parallel/results/MIX13x17_w70/model.pt) |
 
 ### 10.1 Environment Setup
@@ -666,7 +666,7 @@ cd Team-9_K-driver
 ### 10.2 BC + PPO Evaluation
 
 ```cmd
-cd code\BC_PPO
+cd DQN_BC_PPO\BC_PPO
 python run_model.py --seed 1024000
 ```
 
@@ -679,7 +679,7 @@ python run_model.py --seed 1024000
 저장소 루트에서 다음 명령어를 실행합니다.
 
 ```cmd
-cd code\DQN
+cd DQN_BC_PPO\DQN
 python test.py models\DQN_final_C4_870k.pt --algorithm dqn --side-scan on --warmup 200 --warmup-jitter 100 --episodes 1
 ```
 
@@ -693,10 +693,10 @@ python test.py models\DQN_final_C4_870k.pt --algorithm dqn --side-scan on --warm
 
 모델별 학습 및 데이터 수집 방법은 아래 문서를 참고합니다.
 
-- [Environment Setup](../code/Environment/README.md)
-- [Model Training](../code/Training/README.md)
-- [Model Evaluation](../code/Evaluation/README.md)
-- [Data Collection](../code/Data_Collection/README.md)
+- [Environment Setup](../DQN_BC_PPO/Environment/README.md)
+- [Model Training](../DQN_BC_PPO/Training/README.md)
+- [Model Evaluation](../DQN_BC_PPO/Evaluation/README.md)
+- [Data Collection](../DQN_BC_PPO/Data_Collection/README.md)
 
 각 모델의 관측 차원 및 환경 설정이 서로 다르므로 모델별 소스 코드와 실행 환경을 독립적으로 유지하였습니다.
 
@@ -732,7 +732,7 @@ PPO, Behavioral Cloning 기반 PPO, Double DQN 등 다양한 학습방식을 적
 | Materials | Link |
 |---|---|
 | Project Code | [GitHub Repository](https://github.com/gofltms33-maker/Team-9_K-driver) |
-| Code Documentation | [Code & Reproduction](../code/README.md) |
+| Code Documentation | [Code & Reproduction](../DQN_BC_PPO/README.md) |
 | Presentation PDF | 추가 예정 |
 | Dataset | Hugging Face 링크 추가 예정 |
 | Project Page | 추가 예정 |

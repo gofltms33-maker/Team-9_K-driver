@@ -52,4 +52,4 @@ python Evaluation/evaluate.py results/MIX13x17_w70/model.pt --nogui --episodes 1
 - 도로는 현재 `env/road_config.py`로 다시 생성합니다. 모델만 옮기지 말고 결과 폴더의 설정 사본도 유지합니다.
 - 관측·보상·교통 형성 조건과 평가 횟수가 다른 BC+PPO·DQN 결과는 [상세 보고서](../docs/PROJECT_REPORT.md#8-final-model-comparison)의 조건과 함께 해석합니다.
 
-기존 모델 재현은 [BC+PPO·DQN 평가 안내](../code/Evaluation/README.md)를 참고합니다.
+기존 모델 재현은 [BC+PPO·DQN 평가 안내](../DQN_BC_PPO/Evaluation/README.md)를 참고합니다.
