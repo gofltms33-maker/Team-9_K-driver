@@ -1,0 +1,8 @@
+# Direct imports used by this implementation; original versions were not recorded.
+# Install SUMO separately, and keep traci/sumolib compatible with that installation.
+numpy
+torch
+gymnasium
+traci
+sumolib
+# Optional: tensorboard (training logs), libsumo (faster headless simulation).

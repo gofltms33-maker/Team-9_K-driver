@@ -1,0 +1,2 @@
+# Preserve original bytes for source files, experiment snapshots and SHA-256 manifest.
+* -text

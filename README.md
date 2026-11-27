@@ -1,5 +1,7 @@
 # K-Driver
 
+> 추가 구현: [PPO 병렬 학습·평가·주행 데이터 수집 (`ppo_v1_parallel/`)](ppo_v1_parallel/README.md)
+
 ### 성균관대학교 자율주행인공지능제어 9조 프로젝트
 
 SUMO 기반 도심 자율주행 환경을 구축하고, 다양한 일반 차량(HV)과의 상호작용 속에서 자율주행 차량(AV)의 가감속 및 차로 변경 판단을 학습하는 프로젝트입니다.
@@ -687,6 +689,38 @@ PPO, Behavioral Cloning 기반 PPO, Double DQN 등 다양한 학습방식을 적
 | Dataset | Hugging Face 링크 추가 예정 |
 | Project Page | 추가 예정 |
 | Driving Demonstration | 추가 예정 |
+
+---
+
+## 13. PPO Parallel Implementation
+
+로컬에서 개발한 PPO 병렬 학습·평가·데이터 수집 구현을 [`ppo_v1_parallel/`](ppo_v1_parallel/)에 추가하였습니다. 이 구현은 독립된 실행 폴더로 구성되어 있으며, 관련 설명은 [별도 README](ppo_v1_parallel/README.md)를 참고합니다.
+
+| 구성 | 내용 |
+|---|---|
+| PPO 학습 | 연속 가감속 + 이산 차로 변경 hybrid 정책, 여러 SUMO 환경의 병렬 rollout, 기존 모델에서 추가 학습 |
+| 주행 환경 | 양재IC·서초IC 주변 순환 도로, 교차로·공사·합류 구간 및 도로 생성용 OSM 입력 데이터 |
+| 평가 | GUI 주행 재생, 화면 없는 평가, 고정 시드 및 학습 당시 설정 복원 옵션 |
+| 데이터 수집 | SAFE13 53,248스텝 모델을 기본 사용, part·작업자별 시드 분리, 압축 CSV 기록 |
+| 실험 기록 | SAFE5·SAFE11·SAFE13·SAFE17 모델·설정·로그·평가 경로, MIX13x17 가중치 평균 모델 |
+
+저장소 루트에서 다음과 같이 실행합니다. SUMO 설치 및 `SUMO_HOME` 설정은 [실행 준비](ppo_v1_parallel/README.md#실행-준비)를 참고합니다.
+
+```powershell
+cd ppo_v1_parallel
+python -m pip install -r requirements.txt
+
+# 병렬 학습
+python train.py --name PPO_parallel --n-envs 8 --timesteps 200000
+
+# 데이터 수집 기본 모델 평가
+python test.py results/SAFE13_20261125_185902/eval_models/model_00053248.pt --yield-cut on --nogui --episodes 10 --seed-start 1000
+
+# 주행 데이터 수집
+python collect_data.py --part 1 --rows 3334000 --workers 8
+```
+
+소스와 실험 파일은 원본 내용을 유지하였으며, 로컬 대용량 수집 데이터와 자동 생성 SUMO 파일, TensorBoard 출력 및 Python 캐시는 포함하지 않았습니다. 복사 파일 목록과 SHA-256은 [`source_manifest.json`](ppo_v1_parallel/source_manifest.json)에 기록하였습니다. 저장된 성능 지표는 각 실험 당시의 결과이며 이번 정리 작업에서 SUMO 주행을 새로 실행하지는 않았습니다.
 
 ---
 
