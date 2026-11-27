@@ -151,4 +151,3 @@ python Data_Collection/collect.py --part 1 --rows 3334000 --workers 8
 - [기존 BC+PPO·DQN 안내](code/README.md)
 - [제출용 저장소 링크](https://github.com/gofltms33-maker/Team-9_K-driver): 프로젝트 페이지에서 연결할 코드 URL
 
-수치와 그림의 출처는 최종 발표자료 `K-Driver_final 박제민 수정본.pptx`입니다. 대표 이미지는 12쪽, 최종 PPO 결과는 33~37쪽, 데이터셋은 43~44쪽을 기준으로 작성했습니다.
