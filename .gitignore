@@ -1,0 +1,6 @@
+/.venv/
+/venv/
+/Training/__pycache__/
+/Evaluation/__pycache__/
+/Environment/__pycache__/
+/Data_Collection/__pycache__/
