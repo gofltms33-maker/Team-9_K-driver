@@ -617,10 +617,10 @@ Team-9_K-driver/
     ├── Evaluation/
     ├── Data_Collection/
     │
-    ├── BC_PPO_13p33_share/
+    ├── BC_PPO/
     │   └── BC + PPO Model
     │
-    └── K-Driver/
+    └── DQN/
         └── P1~P9 and DQN Model
 ```
 
@@ -639,8 +639,8 @@ Team-9_K-driver/
 
 | Model | Source Code |
 |---|---|
-| BC + PPO | [BC_PPO_13p33_share](../code/BC_PPO_13p33_share/) |
-| Initial PPO and DQN | [K-Driver](../code/K-Driver/) |
+| BC + PPO | [BC_PPO](../code/BC_PPO/) |
+| Initial PPO and DQN | [K-Driver](../code/DQN/) |
 | Final PPO | [ppo_v1_parallel](../ppo_v1_parallel/README.md) · [7:3 혼합 모델](../ppo_v1_parallel/results/MIX13x17_w70/model.pt) |
 
 ### 10.1 Environment Setup
@@ -666,7 +666,7 @@ cd Team-9_K-driver
 ### 10.2 BC + PPO Evaluation
 
 ```cmd
-cd code\BC_PPO_13p33_share
+cd code\BC_PPO
 python run_model.py --seed 1024000
 ```
 
@@ -679,7 +679,7 @@ python run_model.py --seed 1024000
 저장소 루트에서 다음 명령어를 실행합니다.
 
 ```cmd
-cd code\K-Driver
+cd code\DQN
 python test.py models\DQN_final_C4_870k.pt --algorithm dqn --side-scan on --warmup 200 --warmup-jitter 100 --episodes 1
 ```
 

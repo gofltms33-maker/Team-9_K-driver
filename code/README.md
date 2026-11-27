@@ -1,6 +1,6 @@
 # K-Driver | Code & Reproduction
 
-숭실대학교 자율주행인공지능제어 9조 — 양재 IC 인근 SUMO 기반 자율주행 프로젝트.
+성균관대학교 자율주행인공지능제어 9조 — 양재 IC 인근 SUMO 기반 자율주행 프로젝트.
 
 [팀 프로젝트 저장소](https://github.com/gofltms33-maker/Team-9_K-driver) · [프로젝트 소개](../README.md)
 
@@ -15,9 +15,33 @@
 
 ## 모델별 소스
 
-- [BC + PPO](BC_PPO_13p33_share/): v118 round004 가중치, 고정 도로 fixture, 학습/평가 코드. 원본 [실행 설명](BC_PPO_13p33_share/READ_ME_KO.txt).
-- [P1~P9 및 DQN](K-Driver/): PPO 비교 실험, DQN 및 최종 가중치, 실험 설정과 기록.
-- 별도 순수 PPO 모델은 이번 묶음에서 제외(추후 추가).
+```text
+code/
+├── DQN/               # K-Driver_P1-P9, DQN.zip: DQN + 초기 PPO P1~P9
+│   ├── README.md
+│   ├── train.py / test.py
+│   ├── algorithms/ / env/ / utils/
+│   ├── models/        # 최종 DQN 및 PPO 비교 모델
+│   └── experiments/   # 실험별 설정·모델·기록
+├── BC_PPO/            # BC_PPO model.zip: 모방학습 + PPO 보완학습
+│   ├── README.md
+│   ├── run_model.py
+│   ├── model/ / ppo_initialization/
+│   ├── fixture/       # 당시 고정 도로 환경
+│   └── evaluation/ / training_logs/ / provenance/
+├── Environment/       # 두 패키지의 환경 안내
+├── Training/          # 학습 색인
+├── Evaluation/        # 평가 색인
+└── Data_Collection/   # 수집 색인
+```
+
+| 패키지 | 내용 | 실행 안내 |
+|---|---|---|
+| [DQN](DQN/) | Double DQN, 초기 PPO P1~P9 실험, 최종 가중치·기록 | [DQN README](DQN/README.md) |
+| [BC_PPO](BC_PPO/) | v118 round004, 가감속 고정·차로 변경 PPO, 고정 fixture | [BC+PPO README](BC_PPO/README.md) |
+| [팀 최종 순수 PPO](../ppo_v1_parallel/) | SAFE13·17의 7:3 혼합 + B·Y·S | [최종 모델 평가](../Evaluation/README.md) |
+
+첨부 ZIP과 대조한 원본 파일은 DQN 패키지 213개, BC+PPO 패키지 82개입니다. 기존 `K-Driver/`는 `DQN/`, `BC_PPO_13p33_share/`는 `BC_PPO/`로 이동했습니다. 소스·모델·환경·실험 기록의 내용은 보존하고 안내 문서와 경로만 정리했습니다.
 
 각 모델의 코드와 설정은 독립적으로 유지한다. 네 가지 기능별 폴더는 코드 위치와 명령을 안내하는 색인이다. 명령은 Windows CMD 기준이며 저장소 루트에서 시작한다. 모델별 디렉터리로 이동한 후 실행한다.
 

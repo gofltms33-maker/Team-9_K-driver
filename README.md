@@ -45,7 +45,9 @@ Team-9_K-driver/
 │   ├── env/             # SUMO 환경·도로·관측·보상·기록기
 │   ├── utils/           # 네트워크·버퍼·병렬 환경·평가
 │   └── results/         # SAFE 실험 및 MIX 최종 가중치
-├── code/                 # 기존 BC+PPO·DQN 구현
+├── code/
+│   ├── DQN/             # Double DQN + 초기 PPO P1~P9
+│   └── BC_PPO/          # BC 모방학습 + PPO 보완학습
 ├── docs/                 # 최종 발표 기반 상세 보고서
 ├── assets/               # 발표자료의 경로·도로망 이미지
 └── requirements.txt
@@ -130,8 +132,8 @@ python Data_Collection/collect.py --part 1 --rows 3334000 --workers 8
 
 | 모델 | 완주율 | 충돌률 | 평가 조건 | 코드 |
 |---|---:|---:|---|---|
-| BC + PPO | 85.00% | 13.33% | 교통 사전 형성 없음 | [BC+PPO](code/BC_PPO_13p33_share/) |
-| Double DQN D4 | 58.00% | 7.00% | 교통 사전 형성, 100회 | [DQN](code/K-Driver/) |
+| BC + PPO | 85.00% | 13.33% | 교통 사전 형성 없음 | [BC+PPO](code/BC_PPO/) |
+| Double DQN D4 | 58.00% | 7.00% | 교통 사전 형성, 100회 | [DQN](code/DQN/) |
 | **PPO 7:3 + B·Y·S** | **85.25%** | **3.25%** | **교통 사전 형성, 400회** | [최종 가중치](ppo_v1_parallel/results/MIX13x17_w70/model.pt) |
 
 평가 횟수·관측·교통 조건이 달라 동일 조건의 알고리즘 성능 비교로 해석할 수는 없습니다. [상세 보고서](docs/PROJECT_REPORT.md)에 P1~P9, BC 보완학습, DQN D1~D4, PPO SAFE·혼합 실험과 남은 과제를 정리했습니다.
