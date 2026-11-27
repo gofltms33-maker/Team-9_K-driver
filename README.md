@@ -4,7 +4,7 @@
 
 ### SUMO 기반 차량 상호작용과 자율주행 강화학습
 
-성균관대학교 · 자율주행인공지능제어 · Team 9
+성균관대학교 · 자율주행인공지능및제어 · Team 9
 
 **[Environment](Environment/README.md) · [Training](Training/README.md) · [Evaluation](Evaluation/README.md) · [Data Collection](Data_Collection/README.md) · [상세 보고서](docs/PROJECT_REPORT.md)**
 
