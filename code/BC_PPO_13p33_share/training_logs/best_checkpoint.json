@@ -1,0 +1,13 @@
+{
+  "steps": 98304,
+  "arrival": 0.92,
+  "collision": 0.08,
+  "red_light": 0.0,
+  "route_blocked": 0.0,
+  "idle": 0.0,
+  "teleport": 0.0,
+  "stuck": 0.0,
+  "time_limit": 0.0,
+  "progress_m": 7670.7896,
+  "ep_return": 326.18552
+}

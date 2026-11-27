@@ -1,0 +1,1094 @@
+{
+  "protected_files": {
+    "results\\envfix_20261118_140436\\sumo\\highway.net.xml": "20d6de0afd6233ba60ca3288ae684938eca73a9fab071a9911b205143b7a116b",
+    "results\\envfix_20261118_140436\\sumo\\highway.rou.xml": "243272e1a1885b511d538c2580f1051457954d4361ed6d6b9b96d711a97da962",
+    "C:\\Users\\jamie\\team_sumo\\env\\sumo_env.py": "16e40565dedb23b5b312c7b8d928d1eee9bcf63dbc5badc3cf179bd69659d250",
+    "C:\\Users\\jamie\\team_sumo\\env\\mdp_config.py": "746fa4c8d7b503905ecb760296653eb0df2c3cdd0a00d23d2684ffcd21bbc292",
+    "C:\\Users\\jamie\\team_sumo\\env\\road_config.py": "78857c531e3b065cbbf4101fe2708bc0871a90cdfd5361ea4335604fe42d13d5",
+    "C:\\Users\\jamie\\team_sumo\\env\\traffic_mix.py": "b4dc52c9b324cf6d05f7598b30d1931ae6884c5fa6f83eb82982c646669fc3d8",
+    "C:\\Users\\jamie\\team_sumo\\env\\roads\\traffic_mix.py": "b4dc52c9b324cf6d05f7598b30d1931ae6884c5fa6f83eb82982c646669fc3d8",
+    "C:\\Users\\jamie\\team_sumo\\env\\traffic_scenarios.py": "ecb209555d93959ca57c4500ef09750adca4a15aa433150a49b189e8332c8ad5",
+    "C:\\Users\\jamie\\team_sumo\\env\\sumo\\highway.net.xml": "3ad75b15f2d2fac648bcacd20fbc1046c51db7b8c126d7d374e7d022a35fe0a1",
+    "C:\\Users\\jamie\\team_sumo\\env\\sumo\\highway.rou.xml": "243272e1a1885b511d538c2580f1051457954d4361ed6d6b9b96d711a97da962",
+    "C:\\Users\\jamie\\team_sumo\\utils\\networks.py": "b6bda5c5baaf28c99492b2f5535088880307ca62bce3b0390dfe58b3462a6da8",
+    "C:\\Users\\jamie\\team_sumo\\algorithms\\ppo.py": "3f42c0da5a94ebde6909d3beda2949623f3dea500112680688acf6cff94b6824",
+    "C:\\Users\\jamie\\team_sumo\\results\\diverse_imitation_v107\\selected_frozen\\model.pt": "3b4284d2eec0a005fd13c43f36df6371270b20d6f768ffadd5dd8799edd41c47",
+    "C:\\Users\\jamie\\team_sumo\\results\\current_model_refinement_v111\\selected_frozen\\model.pt": "19416dfff3a6e9a099f3e78eac8f069d7a4e36bb7b695e345c2d8ffa27d72bab",
+    "C:\\Users\\jamie\\team_sumo\\results\\evidence_guided_refinement_v115\\lateral_ppo_development_frozen\\model.pt": "b86a3f1a7d2af5c0f0bd801e8996e4ad4c0c94fff39d4c653862eefb6c1705cc",
+    "C:\\Users\\jamie\\team_sumo\\results\\collision_state_learning_v117\\baseline_development_frozen\\model.pt": "b86a3f1a7d2af5c0f0bd801e8996e4ad4c0c94fff39d4c653862eefb6c1705cc",
+    "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_001\\baseline_development_frozen\\model.pt": "b86a3f1a7d2af5c0f0bd801e8996e4ad4c0c94fff39d4c653862eefb6c1705cc",
+    "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_002\\baseline_development_frozen\\model.pt": "b86a3f1a7d2af5c0f0bd801e8996e4ad4c0c94fff39d4c653862eefb6c1705cc",
+    "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen\\model.pt": "b86a3f1a7d2af5c0f0bd801e8996e4ad4c0c94fff39d4c653862eefb6c1705cc"
+  },
+  "status": "completed_experiments_goal_not_met",
+  "pid": 27188,
+  "source": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen",
+  "development_seeds": [
+    1024000,
+    1024299
+  ],
+  "private_seeds": [
+    1024300,
+    1024399
+  ],
+  "commands": [
+    {
+      "pid": 17140,
+      "args": [
+        "audit_saved_failures.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen\\evaluation_1023000_300\\evaluation.json",
+        "--output",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\failure_audit",
+        "--workers",
+        "4"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\failure_replay.log"
+    },
+    {
+      "pid": 11296,
+      "args": [
+        "collect_audited_course_data.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_1",
+        "--kind",
+        "recovery",
+        "--episodes",
+        "0",
+        "--seed-start",
+        "70000",
+        "--include-seeds",
+        "1023012",
+        "1023027",
+        "1023030",
+        "1023033",
+        "1023035",
+        "1023051",
+        "1023056",
+        "1023076",
+        "1023080",
+        "1023083",
+        "1023095",
+        "1023101",
+        "1023104",
+        "1023122",
+        "1023126",
+        "1023172",
+        "1023174",
+        "1023183",
+        "1023186",
+        "1023196",
+        "1023203",
+        "1023206",
+        "1023230",
+        "1023243",
+        "1023259",
+        "1023274",
+        "1023276",
+        "--lead-steps",
+        "1",
+        "--window-steps",
+        "8",
+        "--min-successful-episodes",
+        "1"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_1.collection.log"
+    },
+    {
+      "pid": 29176,
+      "args": [
+        "collect_audited_course_data.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_4",
+        "--kind",
+        "recovery",
+        "--episodes",
+        "0",
+        "--seed-start",
+        "70000",
+        "--include-seeds",
+        "1023012",
+        "1023027",
+        "1023030",
+        "1023033",
+        "1023035",
+        "1023051",
+        "1023056",
+        "1023076",
+        "1023080",
+        "1023083",
+        "1023095",
+        "1023101",
+        "1023104",
+        "1023122",
+        "1023126",
+        "1023172",
+        "1023174",
+        "1023183",
+        "1023186",
+        "1023196",
+        "1023203",
+        "1023206",
+        "1023230",
+        "1023243",
+        "1023259",
+        "1023274",
+        "1023276",
+        "--lead-steps",
+        "4",
+        "--window-steps",
+        "8",
+        "--min-successful-episodes",
+        "1"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_4.collection.log"
+    },
+    {
+      "pid": 3108,
+      "args": [
+        "collect_audited_course_data.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_4",
+        "--kind",
+        "recovery",
+        "--episodes",
+        "0",
+        "--seed-start",
+        "70000",
+        "--include-seeds",
+        "1023000",
+        "1023025",
+        "1023061",
+        "1023081",
+        "1023107",
+        "1023123",
+        "1023132",
+        "1023175",
+        "1023207",
+        "--lead-steps",
+        "4",
+        "--window-steps",
+        "16",
+        "--min-successful-episodes",
+        "1"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_4.collection.log"
+    },
+    {
+      "pid": 22144,
+      "args": [
+        "audit_demonstration_actions.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_1\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_1_action_check"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_1.audit.log"
+    },
+    {
+      "pid": 24592,
+      "args": [
+        "audit_demonstration_actions.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_4\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_4_action_check"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_4.audit.log"
+    },
+    {
+      "pid": 29400,
+      "args": [
+        "audit_demonstration_actions.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_4\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_4_action_check"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_4.audit.log"
+    },
+    {
+      "pid": 19448,
+      "args": [
+        "collect_audited_course_data.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_16",
+        "--kind",
+        "recovery",
+        "--episodes",
+        "0",
+        "--seed-start",
+        "70000",
+        "--include-seeds",
+        "1023000",
+        "1023025",
+        "1023061",
+        "1023081",
+        "1023107",
+        "1023123",
+        "1023132",
+        "1023175",
+        "1023207",
+        "--lead-steps",
+        "16",
+        "--window-steps",
+        "16",
+        "--min-successful-episodes",
+        "1"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_16.collection.log"
+    },
+    {
+      "pid": 27548,
+      "args": [
+        "collect_audited_course_data.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_8",
+        "--kind",
+        "recovery",
+        "--episodes",
+        "0",
+        "--seed-start",
+        "70000",
+        "--include-seeds",
+        "1023017",
+        "1023036",
+        "1023072",
+        "1023108",
+        "1023125",
+        "1023197",
+        "1023204",
+        "1023212",
+        "1023234",
+        "1023289",
+        "--lead-steps",
+        "8",
+        "--window-steps",
+        "16",
+        "--min-successful-episodes",
+        "1"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_8.collection.log"
+    },
+    {
+      "pid": 25900,
+      "args": [
+        "collect_audited_course_data.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_16",
+        "--kind",
+        "recovery",
+        "--episodes",
+        "0",
+        "--seed-start",
+        "70000",
+        "--include-seeds",
+        "1023017",
+        "1023036",
+        "1023072",
+        "1023108",
+        "1023125",
+        "1023197",
+        "1023204",
+        "1023212",
+        "1023234",
+        "1023289",
+        "--lead-steps",
+        "16",
+        "--window-steps",
+        "16",
+        "--min-successful-episodes",
+        "1"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_16.collection.log"
+    },
+    {
+      "pid": 3460,
+      "args": [
+        "audit_demonstration_actions.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_16_action_check"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_16.audit.log"
+    },
+    {
+      "pid": 15616,
+      "args": [
+        "audit_demonstration_actions.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_8\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_8_action_check"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_8.audit.log"
+    },
+    {
+      "pid": 19616,
+      "args": [
+        "audit_demonstration_actions.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_16_action_check"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_16.audit.log"
+    },
+    {
+      "pid": 18300,
+      "args": [
+        "collect_audited_course_data.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\blocked_80",
+        "--kind",
+        "recovery",
+        "--episodes",
+        "0",
+        "--seed-start",
+        "70000",
+        "--include-seeds",
+        "1023013",
+        "1023094",
+        "1023178",
+        "--lead-steps",
+        "80",
+        "--window-steps",
+        "120",
+        "--min-successful-episodes",
+        "1"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\blocked_80.collection.log"
+    },
+    {
+      "pid": 18844,
+      "args": [
+        "audit_demonstration_actions.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\blocked_80\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\blocked_80_action_check"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\blocked_80.audit.log"
+    },
+    {
+      "pid": 16784,
+      "args": [
+        "train_trust_region_correction.py",
+        "--init-run",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen",
+        "--output",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\lateral",
+        "--data",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\braking_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\crossing_8\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\crossing_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\blocked_80\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_1\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_4\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_8\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\blocked_80\\demonstrations.npz",
+        "--rehearsal",
+        "C:\\Users\\jamie\\team_sumo\\results\\evidence_guided_refinement_v115\\rehearsal\\rehearsal.npz",
+        "--iterations",
+        "1600"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\lateral.train.log"
+    },
+    {
+      "pid": 3040,
+      "args": [
+        "train_trust_region_correction.py",
+        "--init-run",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen",
+        "--output",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\joint",
+        "--data",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\braking_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\crossing_8\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\crossing_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\blocked_80\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_1\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_4\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_8\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\blocked_80\\demonstrations.npz",
+        "--rehearsal",
+        "C:\\Users\\jamie\\team_sumo\\results\\evidence_guided_refinement_v115\\rehearsal\\rehearsal.npz",
+        "--iterations",
+        "1600",
+        "--joint"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\joint.train.log"
+    },
+    {
+      "pid": 5696,
+      "args": [
+        "parallel_evaluate.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\baseline_development_frozen",
+        "--episodes",
+        "300",
+        "--seed-start",
+        "1024000",
+        "--workers",
+        "4",
+        "--require-course-profile",
+        "--output",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\baseline_development_frozen\\evaluation_1024000_300"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\baseline_development.log"
+    },
+    {
+      "pid": 11532,
+      "args": [
+        "parallel_evaluate.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\lateral_development_frozen",
+        "--episodes",
+        "300",
+        "--seed-start",
+        "1024000",
+        "--workers",
+        "4",
+        "--require-course-profile",
+        "--output",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\lateral_development_frozen\\evaluation_1024000_300"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\lateral_development.log"
+    },
+    {
+      "pid": 24380,
+      "args": [
+        "parallel_evaluate.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\joint_development_frozen",
+        "--episodes",
+        "300",
+        "--seed-start",
+        "1024000",
+        "--workers",
+        "4",
+        "--require-course-profile",
+        "--output",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\joint_development_frozen\\evaluation_1024000_300"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\joint_development.log"
+    },
+    {
+      "pid": 21812,
+      "args": [
+        "train_warmstart_ppo.py",
+        "--init-run",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\baseline_development_frozen",
+        "--output",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\ppo",
+        "--data",
+        "C:\\Users\\jamie\\team_sumo\\results\\sensor_range_imitation_v97\\data_signal250\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\bottleneck_experiments_v102\\current_policy_recovery\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\bottleneck_experiments_v102\\late_policy_recovery\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\safety_bottleneck_v103\\near_failure_recovery\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\safety_bottleneck_v103\\round2_recovery\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\diverse_imitation_v107\\native_0\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\diverse_imitation_v107\\native_1\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\diverse_imitation_v107\\native_2\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\diverse_imitation_v107\\native_3\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\current_model_refinement_v111\\s1_recovery_0\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\current_model_refinement_v111\\s1_recovery_1\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\braking_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\crossing_8\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\crossing_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_003\\blocked_80\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_1\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_4\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_8\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_16\\demonstrations.npz",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\blocked_80\\demonstrations.npz",
+        "--lane-only",
+        "--steps",
+        "131072",
+        "--rollout",
+        "2048",
+        "--epochs",
+        "2",
+        "--lr",
+        ".000002",
+        "--gamma",
+        ".999",
+        "--clip",
+        ".03",
+        "--target-kl",
+        ".002",
+        "--bc-coef",
+        ".05",
+        "--lane-weight-power",
+        "0",
+        "--std",
+        ".03",
+        "--lane-temperature",
+        "1",
+        "--warmup-updates",
+        "4",
+        "--eval-every",
+        "16",
+        "--eval-episodes",
+        "50",
+        "--eval-seed-start",
+        "1024000",
+        "--train-seed-start",
+        "70000",
+        "--train-seed-stop",
+        "90000",
+        "--collision-penalty",
+        "300",
+        "--failure-penalty",
+        "300",
+        "--arrival-bonus",
+        "300",
+        "--red-light-penalty",
+        "300",
+        "--risk-shaping",
+        "potential",
+        "--strict-speed-mode"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\ppo.train.log"
+    },
+    {
+      "pid": 14340,
+      "args": [
+        "parallel_evaluate.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\ppo_development_frozen",
+        "--episodes",
+        "300",
+        "--seed-start",
+        "1024000",
+        "--workers",
+        "4",
+        "--require-course-profile",
+        "--output",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\ppo_development_frozen\\evaluation_1024000_300"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\ppo_development.log"
+    },
+    {
+      "pid": 7396,
+      "args": [
+        "parallel_evaluate.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\baseline_final_frozen",
+        "--episodes",
+        "100",
+        "--seed-start",
+        "1024300",
+        "--workers",
+        "4",
+        "--require-course-profile",
+        "--output",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\baseline_final_frozen\\evaluation_1024300_100"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\baseline_final.log"
+    },
+    {
+      "pid": 11896,
+      "args": [
+        "parallel_evaluate.py",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\selected_final_frozen",
+        "--episodes",
+        "100",
+        "--seed-start",
+        "1024300",
+        "--workers",
+        "4",
+        "--require-course-profile",
+        "--output",
+        "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\selected_final_frozen\\evaluation_1024300_100"
+      ],
+      "log": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\selected_final.log"
+    }
+  ],
+  "verified_datasets": [
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_1",
+      "samples": 216,
+      "successful_teacher_episodes": 27,
+      "action_checks_passed": true,
+      "exact_learner_first_states": 27,
+      "sampled_general_coverage": true
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\side_4",
+      "samples": 216,
+      "successful_teacher_episodes": 27,
+      "action_checks_passed": true,
+      "exact_learner_first_states": 27,
+      "sampled_general_coverage": true
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_16",
+      "samples": 144,
+      "successful_teacher_episodes": 9,
+      "action_checks_passed": true,
+      "exact_learner_first_states": 9,
+      "sampled_general_coverage": false
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_8",
+      "samples": 160,
+      "successful_teacher_episodes": 10,
+      "action_checks_passed": true,
+      "exact_learner_first_states": 10,
+      "sampled_general_coverage": false
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\crossing_16",
+      "samples": 160,
+      "successful_teacher_episodes": 10,
+      "action_checks_passed": true,
+      "exact_learner_first_states": 10,
+      "sampled_general_coverage": false
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\blocked_80",
+      "samples": 360,
+      "successful_teacher_episodes": 3,
+      "action_checks_passed": true,
+      "exact_learner_first_states": 0,
+      "sampled_general_coverage": false
+    }
+  ],
+  "rejected_datasets": [
+    {
+      "folder": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\braking_4",
+      "error": "RuntimeError('Teacher action projection failed')"
+    }
+  ],
+  "baseline_development": {
+    "run": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\baseline_development_frozen",
+    "metrics": {
+      "episodes": 300,
+      "completed_records": 300,
+      "end_reason_counts": {
+        "arrival": 250,
+        "collision": 45,
+        "route_blocked": 4,
+        "red_light": 1
+      },
+      "collision_episodes": 45,
+      "arrival_episodes": 250,
+      "collision_rate": 0.15,
+      "arrival_rate": 0.8333333333333334,
+      "red_light_rate": 0.0033333333333333335,
+      "teleport_rate": 0.0,
+      "evaluation_error_rate": 0.0,
+      "failed_episodes": 50,
+      "evaluation_valid": true,
+      "course_profile_required": true,
+      "course_profile_verified": true,
+      "physical_progress_input_enabled": false,
+      "collision_target_met": false,
+      "completion_target_met": false,
+      "perfect_completion_observed": false,
+      "task_target_met": false,
+      "note": "All planned seeds are in the denominator; errors are failures. Finite-sample results do not guarantee future success."
+    },
+    "evaluation": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\baseline_development_frozen\\evaluation_1024000_300",
+    "seed_blocks": [
+      {
+        "episodes": 100,
+        "seed_start": 1024000,
+        "seed_stop": 1024099,
+        "collision_rate": 0.12,
+        "arrival_rate": 0.85,
+        "end_reason_counts": {
+          "arrival": 85,
+          "collision": 12,
+          "route_blocked": 3
+        }
+      },
+      {
+        "episodes": 100,
+        "seed_start": 1024100,
+        "seed_stop": 1024199,
+        "collision_rate": 0.17,
+        "arrival_rate": 0.82,
+        "end_reason_counts": {
+          "arrival": 82,
+          "collision": 17,
+          "red_light": 1
+        }
+      },
+      {
+        "episodes": 100,
+        "seed_start": 1024200,
+        "seed_stop": 1024299,
+        "collision_rate": 0.16,
+        "arrival_rate": 0.83,
+        "end_reason_counts": {
+          "arrival": 83,
+          "route_blocked": 1,
+          "collision": 16
+        }
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "run": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\lateral_development_frozen",
+      "metrics": {
+        "episodes": 300,
+        "completed_records": 300,
+        "end_reason_counts": {
+          "arrival": 241,
+          "collision": 49,
+          "route_blocked": 7,
+          "red_light": 2,
+          "idle": 1
+        },
+        "collision_episodes": 49,
+        "arrival_episodes": 241,
+        "collision_rate": 0.16333333333333333,
+        "arrival_rate": 0.8033333333333333,
+        "red_light_rate": 0.006666666666666667,
+        "teleport_rate": 0.0,
+        "evaluation_error_rate": 0.0,
+        "failed_episodes": 59,
+        "evaluation_valid": true,
+        "course_profile_required": true,
+        "course_profile_verified": true,
+        "physical_progress_input_enabled": false,
+        "collision_target_met": false,
+        "completion_target_met": false,
+        "perfect_completion_observed": false,
+        "task_target_met": false,
+        "note": "All planned seeds are in the denominator; errors are failures. Finite-sample results do not guarantee future success."
+      },
+      "evaluation": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\lateral_development_frozen\\evaluation_1024000_300",
+      "seed_blocks": [
+        {
+          "episodes": 100,
+          "seed_start": 1024000,
+          "seed_stop": 1024099,
+          "collision_rate": 0.13,
+          "arrival_rate": 0.86,
+          "end_reason_counts": {
+            "arrival": 86,
+            "collision": 13,
+            "route_blocked": 1
+          }
+        },
+        {
+          "episodes": 100,
+          "seed_start": 1024100,
+          "seed_stop": 1024199,
+          "collision_rate": 0.18,
+          "arrival_rate": 0.79,
+          "end_reason_counts": {
+            "arrival": 79,
+            "collision": 18,
+            "red_light": 1,
+            "route_blocked": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "seed_start": 1024200,
+          "seed_stop": 1024299,
+          "collision_rate": 0.18,
+          "arrival_rate": 0.76,
+          "end_reason_counts": {
+            "arrival": 76,
+            "collision": 18,
+            "route_blocked": 4,
+            "idle": 1,
+            "red_light": 1
+          }
+        }
+      ]
+    },
+    {
+      "run": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\joint_development_frozen",
+      "metrics": {
+        "episodes": 300,
+        "completed_records": 300,
+        "end_reason_counts": {
+          "arrival": 238,
+          "collision": 52,
+          "route_blocked": 9,
+          "red_light": 1
+        },
+        "collision_episodes": 52,
+        "arrival_episodes": 238,
+        "collision_rate": 0.17333333333333334,
+        "arrival_rate": 0.7933333333333333,
+        "red_light_rate": 0.0033333333333333335,
+        "teleport_rate": 0.0,
+        "evaluation_error_rate": 0.0,
+        "failed_episodes": 62,
+        "evaluation_valid": true,
+        "course_profile_required": true,
+        "course_profile_verified": true,
+        "physical_progress_input_enabled": false,
+        "collision_target_met": false,
+        "completion_target_met": false,
+        "perfect_completion_observed": false,
+        "task_target_met": false,
+        "note": "All planned seeds are in the denominator; errors are failures. Finite-sample results do not guarantee future success."
+      },
+      "evaluation": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\joint_development_frozen\\evaluation_1024000_300",
+      "seed_blocks": [
+        {
+          "episodes": 100,
+          "seed_start": 1024000,
+          "seed_stop": 1024099,
+          "collision_rate": 0.15,
+          "arrival_rate": 0.8,
+          "end_reason_counts": {
+            "arrival": 80,
+            "collision": 15,
+            "route_blocked": 5
+          }
+        },
+        {
+          "episodes": 100,
+          "seed_start": 1024100,
+          "seed_stop": 1024199,
+          "collision_rate": 0.19,
+          "arrival_rate": 0.79,
+          "end_reason_counts": {
+            "arrival": 79,
+            "collision": 19,
+            "route_blocked": 1,
+            "red_light": 1
+          }
+        },
+        {
+          "episodes": 100,
+          "seed_start": 1024200,
+          "seed_stop": 1024299,
+          "collision_rate": 0.18,
+          "arrival_rate": 0.79,
+          "end_reason_counts": {
+            "arrival": 79,
+            "collision": 18,
+            "route_blocked": 3
+          }
+        }
+      ]
+    },
+    {
+      "run": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\ppo_development_frozen",
+      "metrics": {
+        "episodes": 300,
+        "completed_records": 300,
+        "end_reason_counts": {
+          "arrival": 255,
+          "collision": 40,
+          "route_blocked": 4,
+          "red_light": 1
+        },
+        "collision_episodes": 40,
+        "arrival_episodes": 255,
+        "collision_rate": 0.13333333333333333,
+        "arrival_rate": 0.85,
+        "red_light_rate": 0.0033333333333333335,
+        "teleport_rate": 0.0,
+        "evaluation_error_rate": 0.0,
+        "failed_episodes": 45,
+        "evaluation_valid": true,
+        "course_profile_required": true,
+        "course_profile_verified": true,
+        "physical_progress_input_enabled": false,
+        "collision_target_met": false,
+        "completion_target_met": false,
+        "perfect_completion_observed": false,
+        "task_target_met": false,
+        "note": "All planned seeds are in the denominator; errors are failures. Finite-sample results do not guarantee future success."
+      },
+      "evaluation": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\ppo_development_frozen\\evaluation_1024000_300",
+      "seed_blocks": [
+        {
+          "episodes": 100,
+          "seed_start": 1024000,
+          "seed_stop": 1024099,
+          "collision_rate": 0.08,
+          "arrival_rate": 0.9,
+          "end_reason_counts": {
+            "arrival": 90,
+            "collision": 8,
+            "route_blocked": 2
+          }
+        },
+        {
+          "episodes": 100,
+          "seed_start": 1024100,
+          "seed_stop": 1024199,
+          "collision_rate": 0.17,
+          "arrival_rate": 0.82,
+          "end_reason_counts": {
+            "arrival": 82,
+            "collision": 17,
+            "red_light": 1
+          }
+        },
+        {
+          "episodes": 100,
+          "seed_start": 1024200,
+          "seed_stop": 1024299,
+          "collision_rate": 0.15,
+          "arrival_rate": 0.83,
+          "end_reason_counts": {
+            "arrival": 83,
+            "route_blocked": 2,
+            "collision": 15
+          }
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "run": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\ppo_development_frozen",
+    "metrics": {
+      "episodes": 300,
+      "completed_records": 300,
+      "end_reason_counts": {
+        "arrival": 255,
+        "collision": 40,
+        "route_blocked": 4,
+        "red_light": 1
+      },
+      "collision_episodes": 40,
+      "arrival_episodes": 255,
+      "collision_rate": 0.13333333333333333,
+      "arrival_rate": 0.85,
+      "red_light_rate": 0.0033333333333333335,
+      "teleport_rate": 0.0,
+      "evaluation_error_rate": 0.0,
+      "failed_episodes": 45,
+      "evaluation_valid": true,
+      "course_profile_required": true,
+      "course_profile_verified": true,
+      "physical_progress_input_enabled": false,
+      "collision_target_met": false,
+      "completion_target_met": false,
+      "perfect_completion_observed": false,
+      "task_target_met": false,
+      "note": "All planned seeds are in the denominator; errors are failures. Finite-sample results do not guarantee future success."
+    },
+    "evaluation": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\ppo_development_frozen\\evaluation_1024000_300",
+    "seed_blocks": [
+      {
+        "episodes": 100,
+        "seed_start": 1024000,
+        "seed_stop": 1024099,
+        "collision_rate": 0.08,
+        "arrival_rate": 0.9,
+        "end_reason_counts": {
+          "arrival": 90,
+          "collision": 8,
+          "route_blocked": 2
+        }
+      },
+      {
+        "episodes": 100,
+        "seed_start": 1024100,
+        "seed_stop": 1024199,
+        "collision_rate": 0.17,
+        "arrival_rate": 0.82,
+        "end_reason_counts": {
+          "arrival": 82,
+          "collision": 17,
+          "red_light": 1
+        }
+      },
+      {
+        "episodes": 100,
+        "seed_start": 1024200,
+        "seed_stop": 1024299,
+        "collision_rate": 0.15,
+        "arrival_rate": 0.83,
+        "end_reason_counts": {
+          "arrival": 83,
+          "route_blocked": 2,
+          "collision": 15
+        }
+      }
+    ]
+  },
+  "qualified": false,
+  "paired_baseline": {
+    "run": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\baseline_final_frozen",
+    "metrics": {
+      "episodes": 100,
+      "completed_records": 100,
+      "end_reason_counts": {
+        "arrival": 83,
+        "collision": 15,
+        "route_blocked": 2
+      },
+      "collision_episodes": 15,
+      "arrival_episodes": 83,
+      "collision_rate": 0.15,
+      "arrival_rate": 0.83,
+      "red_light_rate": 0.0,
+      "teleport_rate": 0.0,
+      "evaluation_error_rate": 0.0,
+      "failed_episodes": 17,
+      "evaluation_valid": true,
+      "course_profile_required": true,
+      "course_profile_verified": true,
+      "physical_progress_input_enabled": false,
+      "collision_target_met": false,
+      "completion_target_met": false,
+      "perfect_completion_observed": false,
+      "task_target_met": false,
+      "note": "All planned seeds are in the denominator; errors are failures. Finite-sample results do not guarantee future success."
+    },
+    "evaluation": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\baseline_final_frozen\\evaluation_1024300_100",
+    "seed_blocks": [
+      {
+        "episodes": 100,
+        "seed_start": 1024300,
+        "seed_stop": 1024399,
+        "collision_rate": 0.15,
+        "arrival_rate": 0.83,
+        "end_reason_counts": {
+          "arrival": 83,
+          "collision": 15,
+          "route_blocked": 2
+        }
+      }
+    ]
+  },
+  "final_evaluation": {
+    "run": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\selected_final_frozen",
+    "metrics": {
+      "episodes": 100,
+      "completed_records": 100,
+      "end_reason_counts": {
+        "arrival": 86,
+        "collision": 11,
+        "red_light": 1,
+        "route_blocked": 2
+      },
+      "collision_episodes": 11,
+      "arrival_episodes": 86,
+      "collision_rate": 0.11,
+      "arrival_rate": 0.86,
+      "red_light_rate": 0.01,
+      "teleport_rate": 0.0,
+      "evaluation_error_rate": 0.0,
+      "failed_episodes": 14,
+      "evaluation_valid": true,
+      "course_profile_required": true,
+      "course_profile_verified": true,
+      "physical_progress_input_enabled": false,
+      "collision_target_met": false,
+      "completion_target_met": false,
+      "perfect_completion_observed": false,
+      "task_target_met": false,
+      "note": "All planned seeds are in the denominator; errors are failures. Finite-sample results do not guarantee future success."
+    },
+    "evaluation": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_004\\selected_final_frozen\\evaluation_1024300_100",
+    "seed_blocks": [
+      {
+        "episodes": 100,
+        "seed_start": 1024300,
+        "seed_stop": 1024399,
+        "collision_rate": 0.11,
+        "arrival_rate": 0.86,
+        "end_reason_counts": {
+          "arrival": 86,
+          "collision": 11,
+          "red_light": 1,
+          "route_blocked": 2
+        }
+      }
+    ]
+  }
+}

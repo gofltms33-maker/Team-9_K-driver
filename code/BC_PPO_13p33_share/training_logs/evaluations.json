@@ -1,0 +1,67 @@
+[
+  {
+    "steps": 0,
+    "arrival": 0.84,
+    "collision": 0.14,
+    "red_light": 0.0,
+    "route_blocked": 0.02,
+    "idle": 0.0,
+    "teleport": 0.0,
+    "stuck": 0.0,
+    "time_limit": 0.0,
+    "progress_m": 7537.2856,
+    "ep_return": 277.03964
+  },
+  {
+    "steps": 32768,
+    "arrival": 0.84,
+    "collision": 0.16,
+    "red_light": 0.0,
+    "route_blocked": 0.0,
+    "idle": 0.0,
+    "teleport": 0.0,
+    "stuck": 0.0,
+    "time_limit": 0.0,
+    "progress_m": 7492.974200000001,
+    "ep_return": 276.61551999999995
+  },
+  {
+    "steps": 65536,
+    "arrival": 0.86,
+    "collision": 0.14,
+    "red_light": 0.0,
+    "route_blocked": 0.0,
+    "idle": 0.0,
+    "teleport": 0.0,
+    "stuck": 0.0,
+    "time_limit": 0.0,
+    "progress_m": 7572.609800000001,
+    "ep_return": 289.2377
+  },
+  {
+    "steps": 98304,
+    "arrival": 0.92,
+    "collision": 0.08,
+    "red_light": 0.0,
+    "route_blocked": 0.0,
+    "idle": 0.0,
+    "teleport": 0.0,
+    "stuck": 0.0,
+    "time_limit": 0.0,
+    "progress_m": 7670.7896,
+    "ep_return": 326.18552
+  },
+  {
+    "steps": 131072,
+    "arrival": 0.86,
+    "collision": 0.14,
+    "red_light": 0.0,
+    "route_blocked": 0.0,
+    "idle": 0.0,
+    "teleport": 0.0,
+    "stuck": 0.0,
+    "time_limit": 0.0,
+    "progress_m": 7558.4824,
+    "ep_return": 289.01864
+  }
+]

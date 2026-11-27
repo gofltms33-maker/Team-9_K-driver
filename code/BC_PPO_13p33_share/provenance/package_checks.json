@@ -1,0 +1,13 @@
+{
+  "checkpoint_load": true,
+  "neural_forward_pass": true,
+  "observation_dim": 104,
+  "action_shape": [
+    2
+  ],
+  "frozen_fixture_hashes_match": true,
+  "bc_cli_import_passed": true,
+  "ppo_cli_import_passed": true,
+  "full_sumo_replay_verified": false,
+  "reason": "Local SUMO connection stalled in this tool environment; test processes were stopped. No training was run."
+}

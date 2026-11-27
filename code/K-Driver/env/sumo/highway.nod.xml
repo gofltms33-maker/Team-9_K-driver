@@ -1,0 +1,112 @@
+<nodes>
+    <node id="SB_N" x="-235.67" y="1121.25" z="5.00"/>
+    <node id="SB_x1471" x="-131.16" y="1024.60" z="5.00"/>
+    <node id="SB_d1471" x="-41.35" y="908.23" z="5.00"/>
+    <node id="SB_m7252" x="112.91" y="706.94" z="12.43"/>
+    <node id="SB_d1469" x="201.34" y="587.00" z="10.34"/>
+    <node id="SB_m7085" x="574.43" y="96.08" z="5.00" type="zipper"/>
+    <node id="SB_drop" x="705.65" y="-80.51" z="5.00"/>
+    <node id="SB_S" x="781.37" y="-177.84" z="5.00"/>
+    <node id="NB_S" x="800.12" y="-163.67" z="5.00"/>
+    <node id="NB_msvc" x="418.66" y="341.23" z="5.00"/>
+    <node id="NB_d7083" x="322.04" y="472.03" z="5.00"/>
+    <node id="NB_m1470" x="200.33" y="630.23" z="12.60" type="zipper"/>
+    <node id="NB_d7086" x="133.85" y="721.13" z="12.49"/>
+    <node id="NB_m2907" x="-24.04" y="927.20" z="5.00"/>
+    <node id="NB_dropA" x="-103.54" y="1034.33" z="5.00"/>
+    <node id="NB_dropB" x="-154.37" y="1079.06" z="5.00"/>
+    <node id="NB_N" x="-216.01" y="1133.77" z="5.00"/>
+    <node id="EBm_0" x="-603.11" y="272.81" z="5.00"/>
+    <node id="WBm_0" x="-602.51" y="283.59" z="5.00"/>
+    <node id="EBm_1" x="5.20" y="521.55" z="5.00"/>
+    <node id="WBm_1" x="-2.08" y="529.53" z="5.00"/>
+    <node id="EBm_2" x="274.26" y="760.48" z="5.00"/>
+    <node id="WBm_2" x="267.19" y="768.65" z="5.00"/>
+    <node id="EBm_3" x="558.23" y="1017.49" z="5.00"/>
+    <node id="WBm_3" x="550.99" y="1025.51" z="5.00"/>
+    <node id="YE_merge" x="635.69" y="1088.20" z="5.00"/>
+    <node id="YE_split" x="626.05" y="1094.10" z="5.00"/>
+    <node id="YE_E_out" x="691.75" y="1133.43" z="5.00"/>
+    <node id="YE_W_in" x="680.33" y="1146.29" z="5.00"/>
+    <node id="EBf_d7084" x="-4.27" y="499.12" z="5.00"/>
+    <node id="EBf_dCD" x="48.58" y="547.29" z="5.00"/>
+    <node id="EBf_mCD" x="223.22" y="702.85" z="5.00"/>
+    <node id="EBf_m7083" x="325.01" y="788.79" z="5.00"/>
+    <node id="EBf_drop1" x="423.38" y="874.66" z="5.00"/>
+    <node id="EBf_drop2" x="513.98" y="960.84" z="5.00"/>
+    <node id="CD_m1469" x="96.56" y="582.24" z="5.00"/>
+    <node id="CD_d1470" x="196.68" y="669.05" z="5.00"/>
+    <node id="WBf_x" x="446.02" y="943.17" z="5.00"/>
+    <node id="WBf_d2907" x="330.79" y="840.18" z="5.00"/>
+    <node id="WBf_m7086" x="188.81" y="715.13" z="5.00"/>
+    <node id="WBf_d7252" x="111.40" y="649.58" z="5.00"/>
+    <node id="WBf_m1471" x="-11.20" y="535.83" z="5.00"/>
+    <node id="WBf_drop" x="-109.00" y="450.72" z="5.00"/>
+    <node id="WBf_W" x="-602.80" y="278.50" z="5.00"/>
+    <node id="SVC_start" x="381.09" y="262.80" z="5.00"/>
+    <node id="SVC_up" x="462.94" y="316.23" z="5.00"/>
+    <node id="n11091065444" x="-493.13" y="1706.80" z="5.00"/>
+    <node id="n732030910" x="-511.44" y="1701.36" z="5.00"/>
+    <node id="SC_SB_n0" x="-684.33" y="2315.60" z="5.00"/>
+    <node id="SC_SB_n1" x="-659.70" y="2229.32" z="5.00"/>
+    <node id="SC_SB_n2" x="-607.95" y="2046.42" z="11.27"/>
+    <node id="SC_SB_n3" x="-585.98" y="1957.52" z="12.00"/>
+    <node id="SC_NB_nd" x="-569.11" y="1961.59" z="12.00"/>
+    <node id="SC_NB_n1" x="-586.16" y="2025.91" z="12.00"/>
+    <node id="SC_NB_n2" x="-669.32" y="2319.87" z="5.00"/>
+    <node id="SC_EB_n0" x="-864.71" y="1938.13" z="5.00"/>
+    <node id="SC_EB_n1" x="-786.91" y="1952.06" z="5.00"/>
+    <node id="SC_EB_n2" x="-643.36" y="1978.01" z="5.00"/>
+    <node id="SC_EB_n3" x="-554.57" y="1992.29" z="5.00" type="zipper"/>
+    <node id="SC_EB_n4" x="-398.87" y="2019.40" z="5.00"/>
+    <node id="SC_EB_n5" x="-280.53" y="2038.01" z="5.00" type="zipper"/>
+    <node id="SC_WB_n1" x="-492.02" y="2014.57" z="5.00"/>
+    <node id="SC_WB_n2" x="-580.77" y="2000.18" z="5.00" type="zipper"/>
+    <node id="SC_WB_n3" x="-648.44" y="1989.21" z="5.00"/>
+    <node id="SC_WB_n4" x="-753.99" y="1970.23" z="5.00"/>
+    <node id="SC_WB_n5" x="-867.00" y="1951.48" z="5.00"/>
+    <node id="ar_ys" x="-155.91" y="2073.80" z="5.00" type="traffic_light"/>
+    <node id="ar_nh" x="231.29" y="2134.00" z="5.00" type="traffic_light"/>
+    <node id="ar_mb" x="681.89" y="2330.00" z="5.00" type="traffic_light"/>
+    <node id="ar_kp" x="1419.93" y="1721.49" z="5.00" type="traffic_light"/>
+    <node id="ar_yg" x="786.98" y="1234.77" z="5.00" type="traffic_light"/>
+    <node id="ar_gr" x="897.93" y="1347.24" z="5.00" type="traffic_light"/>
+    <node id="ar_ns_e_f" x="812.91" y="2403.02" z="5.00"/>
+    <node id="ar_ys_a0_o" x="-209.98" y="2213.72" z="5.00"/>
+    <node id="ar_ys_a1_i" x="-57.95" y="1960.05" z="5.00"/>
+    <node id="ar_ys_a1_o" x="-67.27" y="1952.65" z="5.00"/>
+    <node id="ar_nh_a0_o" x="231.19" y="2264.00" z="5.00"/>
+    <node id="ar_nh_a1_i" x="277.61" y="2012.39" z="5.00"/>
+    <node id="ar_nh_a1_o" x="266.31" y="2008.66" z="5.00"/>
+    <node id="ar_mb_a0_o" x="631.34" y="2449.77" z="5.00"/>
+    <node id="ar_kp_a0_o" x="1549.74" y="1796.66" z="5.00"/>
+    <node id="ar_kp_a1_o" x="1512.73" y="1603.64" z="5.00"/>
+    <node id="ar_yg_a1_o" x="890.26" y="1125.99" z="5.00"/>
+    <node id="ar_gr_a0_i" x="811.21" y="1444.27" z="5.00"/>
+    <node id="ar_gr_a0_o" x="820.43" y="1451.79" z="5.00"/>
+    <node id="ar_gr_a1_o" x="981.85" y="1247.95" z="5.00"/>
+    <node id="ar_rb_J" x="-173.25" y="371.61" z="5.00" type="traffic_light"/>
+    <node id="ar_rb_f_div" x="-25.45" y="206.24" z="5.00"/>
+    <node id="ar_rb_f_mrg" x="282.20" y="80.39" z="5.00"/>
+    <node id="ar_rb_f_zip" x="341.87" y="86.15" z="5.00" type="zipper"/>
+    <node id="ar_rb_f_end" x="541.28" y="98.50" z="5.00"/>
+    <node id="ar_rb_b_end" x="540.89" y="107.10" z="5.00"/>
+    <node id="ar_rb_b_div" x="281.34" y="88.95" z="5.00"/>
+    <node id="ar_rb_b_mrg" x="-18.97" y="211.89" z="5.00"/>
+    <node id="ar_rb_b_zip" x="-59.71" y="256.29" z="5.00" type="zipper"/>
+    <node id="ar_rb_n_s" x="116.59" y="76.83" z="5.00"/>
+    <node id="ar_rb_n_e" x="130.19" y="90.73" z="5.00"/>
+    <node id="ar_rb_n_n" x="117.96" y="116.27" z="5.00"/>
+    <node id="ar_rb_n_nw" x="92.25" y="107.89" z="5.00"/>
+    <node id="ar_rb_s_o" x="175.41" y="-103.83" z="5.00"/>
+    <node id="ar_rb_gym_i" x="355.09" y="173.80" z="5.00"/>
+    <node id="ar_hq_G" x="740.20" y="1177.39" z="5.00"/>
+    <node id="ar_hq_HQ_i" x="772.66" y="1142.85" z="5.00"/>
+    <node id="ar_hq_U" x="555.67" y="1425.81" z="5.00"/>
+    <node id="ar_cn_T" x="862.88" y="2056.88" z="5.00" type="traffic_light"/>
+    <node id="ar_cn_AC" x="293.54" y="1646.05" z="5.00" type="traffic_light"/>
+    <node id="ar_cn_BC" x="478.73" y="1783.11" z="5.00" type="traffic_light"/>
+    <node id="ar_ej_f0x_c1" x="1079.47" y="1913.50" z="5.00" type="zipper"/>
+    <node id="ar_ej_f0x_c2" x="1117.48" y="1901.04" z="5.00" type="zipper"/>
+    <node id="ar_ej_f0x_c3" x="1256.71" y="1846.24" z="5.00"/>
+</nodes>

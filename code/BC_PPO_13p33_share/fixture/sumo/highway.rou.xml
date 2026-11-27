@@ -1,0 +1,107 @@
+<routes>
+    <vType id="ego_type" accel="5.4" decel="5.4" maxSpeed="33.33" color="1,0,0" vClass="passenger" guiShape="passenger/sedan"/>
+    <vType id="hv_normal" vClass="passenger" carFollowModel="Krauss" accel="2.6" decel="4.5" sigma="0.5"
+           tau="1.0" minGap="2.5" speedFactor="normc(1.0,0.1,0.8,1.2)" color="210,210,210"
+           lcStrategic="1.0" lcCooperative="0.8" lcSpeedGain="1.0" lcKeepRight="1.0"/>
+    <vType id="hv_slow" vClass="passenger" carFollowModel="Krauss" accel="2.0" decel="4.5" sigma="0.3"
+           tau="1.2" minGap="2.5" speedFactor="normc(0.7,0.05,0.6,0.8)" color="70,130,230"
+           lcStrategic="1.0" lcCooperative="0.8" lcSpeedGain="0.0" lcKeepRight="0.0"/>
+    <vType id="hv_nonyield" vClass="passenger" carFollowModel="Krauss" accel="3.0" decel="4.5" sigma="0.4"
+           tau="1.0" minGap="1.5" speedFactor="normc(1.1,0.1,0.9,1.3)" color="240,140,30"
+           lcStrategic="1.0" lcCooperative="0.0" lcCooperativeSpeed="0.0" lcSpeedGain="1.0" lcKeepRight="0.5"/>
+    <vType id="hv_cutin" vClass="passenger" carFollowModel="Krauss" accel="3.0" decel="4.5" sigma="0.6"
+           tau="1.0" minGap="2.0" speedFactor="normc(1.15,0.1,0.9,1.35)" color="220,60,200"
+           lcStrategic="0.3" lcAssertive="1.8" lcImpatience="0.5" lcCooperative="0.3" lcSpeedGain="2.0"
+           lcKeepRight="0.3"/>
+    <vType id="hv_queue" vClass="passenger" carFollowModel="Krauss" accel="2.4" decel="4.5" sigma="0.5"
+           tau="1.0" minGap="1.0" speedFactor="normc(1.0,0.1,0.8,1.2)" color="245,215,40"
+           lcStrategic="1.0" lcCooperative="0.0" lcCooperativeSpeed="0.0" lcSpeedGain="0.2" lcKeepRight="1.0"/>
+    <vType id="hv_round" vClass="passenger" carFollowModel="Krauss" accel="2.6" decel="4.5" sigma="0.5"
+           tau="1.0" minGap="2.5" speedFactor="normc(1.0,0.1,0.8,1.2)" color="60,190,90"
+           lcStrategic="1.0" lcCooperative="0.8" lcSpeedGain="1.0" lcKeepRight="1.0"/>
+    <vTypeDistribution id="hv" vTypes="hv_normal hv_slow hv_nonyield hv_cutin" probabilities="0.625 0.125 0.125 0.125"/>
+
+    <route id="r0" edges="ar_hq_gate_out ar_yj_f0b ar_yg_a0_out ar_yg_a0_in ar_yj_b0 W_in WBf_a WBf_b R2907 NB_e NB_f NB_g ar_gb_nb SC_NB_EB SC_EB_4 ar_ns_f0 ar_ns_f1 ar_ns_f2 ar_ej_f0 ar_ej_f0x ar_ej_f0x_tp ar_ej_f0x_wz ar_ej_f0x_rc ar_yj_b2 ar_yj_b1 ar_yj_b0 W_in WBf_a WBf_b WBf_c WBf_w WBf_d WBf_e WBf_f ar_rb_f_app ar_rb_s_nw_in ar_rb_c_nw_s ar_rb_c_s_e ar_rb_c_e_n ar_rb_gym_in"/>
+    <route id="rt_sb_thru" edges="SB_a SB_b SB_c SB_w SB_d SB_e SB_f"/>
+    <route id="rt_nb_thru" edges="NB_a NB_b NB_c NB_w NB_d NB_e NB_f NB_g"/>
+    <route id="rt_eb_main" edges="EBm_0 EBm_1 EBm_2 EBm_3 E_out"/>
+    <route id="rt_wb_main" edges="W_in WBm_0 WBm_1 WBm_2 WBm_3"/>
+    <route id="rt_eb_front" edges="EBf_a EBf_b EBf_c EBf_d EBf_e EBf_f EBf_g E_out"/>
+    <route id="rt_wb_front" edges="W_in WBf_a WBf_b WBf_c WBf_w WBf_d WBf_e WBf_f"/>
+    <route id="rt_sb_to_wb" edges="SB_a SB_b R1471 WBf_e WBf_f"/>
+    <route id="rt_sb_to_eb" edges="SB_a SB_b SB_c SB_w L1469 CD_b CD_c EBf_d EBf_e EBf_f EBf_g E_out"/>
+    <route id="rt_nb_to_eb" edges="NB_a NB_b R7083 EBf_e EBf_f EBf_g E_out"/>
+    <route id="rt_nb_to_wb" edges="NB_a NB_b NB_c NB_w L7086 WBf_w WBf_d WBf_e WBf_f"/>
+    <route id="rt_eb_to_sb" edges="EBf_a R7084 SB_e SB_f"/>
+    <route id="rt_eb_to_nb" edges="EBf_a EBf_b CD_a CD_b L1470 NB_w NB_d NB_e NB_f NB_g"/>
+    <route id="rt_wb_to_nb" edges="W_in WBf_a WBf_b R2907 NB_e NB_f NB_g"/>
+    <route id="rt_wb_to_sb" edges="W_in WBf_a WBf_b WBf_c WBf_w L7252 SB_w SB_d SB_e SB_f"/>
+    <route id="rt_svc_to_nb" edges="RSVC_t RSVC_g NB_b NB_c NB_w NB_d NB_e NB_f NB_g"/>
+    <flow id="fc0" type="hv" from="NB_a" to="ar_nh_a0_out" begin="0" end="100000" period="exp(0.02364)" departLane="random" departSpeed="max"/>
+    <flow id="fc1" type="hv" from="NB_a" to="SC_WB_4" begin="0" end="100000" period="exp(0.02364)" departLane="random" departSpeed="max"/>
+    <flow id="fc2" type="hv" from="NB_a" to="ar_mb_a0_out" begin="0" end="100000" period="exp(0.02364)" departLane="random" departSpeed="max"/>
+    <flow id="fc3" type="hv" from="EBm_0" to="ar_gr_a1_out" begin="0" end="100000" period="exp(0.00946)" departLane="random" departSpeed="max"/>
+    <flow id="fc4" type="hv" from="EBm_0" to="SB_f" begin="0" end="100000" period="exp(0.00946)" departLane="random" departSpeed="max"/>
+    <flow id="fc5" type="hv" from="EBm_0" to="SC_NB_1" begin="0" end="100000" period="exp(0.00946)" departLane="random" departSpeed="max"/>
+    <flow id="fc6" type="hv" from="RSVC_t" to="ar_kp_a1_out" begin="0" end="100000" period="exp(0.00473)" departLane="random" departSpeed="max"/>
+    <flow id="fc7" type="hv" from="RSVC_t" to="SC_NB_1" begin="0" end="100000" period="exp(0.00473)" departLane="random" departSpeed="max"/>
+    <flow id="fc8" type="hv" from="RSVC_t" to="ar_nh_a0_out" begin="0" end="100000" period="exp(0.00473)" departLane="random" departSpeed="max"/>
+    <flow id="fc9" type="hv" from="SC_SB_0" to="WBf_g" begin="0" end="100000" period="exp(0.01891)" departLane="random" departSpeed="max"/>
+    <flow id="fc10" type="hv" from="SC_SB_0" to="SB_f" begin="0" end="100000" period="exp(0.01891)" departLane="random" departSpeed="max"/>
+    <flow id="fc11" type="hv" from="SC_SB_0" to="ar_gr_a1_out" begin="0" end="100000" period="exp(0.01891)" departLane="random" departSpeed="max"/>
+    <flow id="fc12" type="hv" from="SC_EB_0" to="ar_ys_a0_out" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc13" type="hv" from="SC_EB_0" to="SB_f" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc14" type="hv" from="SC_EB_0" to="WBm_3" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc15" type="hv" from="ar_ns_b3" to="ar_kp_a1_out" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc16" type="hv" from="ar_ns_b3" to="ar_hq_gate_in" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc17" type="hv" from="ar_ns_b3" to="WBm_3" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc18" type="hv" from="ar_ys_a0_in" to="ar_ns_f3" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc19" type="hv" from="ar_ys_a0_in" to="WBm_3" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc20" type="hv" from="ar_ys_a0_in" to="ar_gr_a1_out" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc21" type="hv" from="ar_nh_a0_in" to="ar_yg_a1_out" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc22" type="hv" from="ar_nh_a0_in" to="SB_f" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc23" type="hv" from="ar_nh_a0_in" to="ar_rb_f_dep" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc24" type="hv" from="ar_mb_a0_in" to="WBm_3" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc25" type="hv" from="ar_mb_a0_in" to="SC_WB_4" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc26" type="hv" from="ar_mb_a0_in" to="ar_rb_f_dep" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc27" type="hv" from="ar_kp_a0_in" to="WBf_g" begin="0" end="100000" period="exp(0.01891)" departLane="random" departSpeed="max"/>
+    <flow id="fc28" type="hv" from="ar_kp_a0_in" to="ar_gr_a1_out" begin="0" end="100000" period="exp(0.01891)" departLane="random" departSpeed="max"/>
+    <flow id="fc29" type="hv" from="ar_kp_a0_in" to="SB_f" begin="0" end="100000" period="exp(0.01891)" departLane="random" departSpeed="max"/>
+    <flow id="fc30" type="hv" from="ar_kp_a1_in" to="WBf_g" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc31" type="hv" from="ar_kp_a1_in" to="ar_hq_gate_in" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc32" type="hv" from="ar_kp_a1_in" to="ar_nh_a0_out" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc33" type="hv" from="ar_yg_a1_in" to="SB_f" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc34" type="hv" from="ar_yg_a1_in" to="SC_WB_4" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc35" type="hv" from="ar_yg_a1_in" to="ar_rb_gym_in" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc36" type="hv" from="ar_gr_a1_in" to="ar_kp_a0_out" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc37" type="hv" from="ar_gr_a1_in" to="SC_NB_1" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc38" type="hv" from="ar_gr_a1_in" to="ar_ns_f3" begin="0" end="100000" period="exp(0.01418)" departLane="random" departSpeed="max"/>
+    <flow id="fc39" type="hv" from="EBf_a0" to="ar_mb_a0_out" begin="0" end="100000" period="exp(0.00946)" departLane="random" departSpeed="max"/>
+    <flow id="fc40" type="hv" from="EBf_a0" to="SC_WB_4" begin="0" end="100000" period="exp(0.00946)" departLane="random" departSpeed="max"/>
+    <flow id="fc41" type="hv" from="EBf_a0" to="ar_kp_a1_out" begin="0" end="100000" period="exp(0.00946)" departLane="random" departSpeed="max"/>
+    <flow id="fc42" type="hv" from="ar_rb_b_app" to="SC_NB_1" begin="0" end="100000" period="exp(0.00946)" departLane="random" departSpeed="max"/>
+    <flow id="fc43" type="hv" from="ar_rb_b_app" to="ar_yg_a1_out" begin="0" end="100000" period="exp(0.00946)" departLane="random" departSpeed="max"/>
+    <flow id="fc44" type="hv" from="ar_rb_b_app" to="ar_ys_a0_out" begin="0" end="100000" period="exp(0.00946)" departLane="random" departSpeed="max"/>
+    <flow id="fc45" type="hv" from="ar_rb_s_in" to="ar_kp_a1_out" begin="0" end="100000" period="exp(0.00473)" departLane="random" departSpeed="max"/>
+    <flow id="fc46" type="hv" from="ar_rb_s_in" to="ar_gr_a1_out" begin="0" end="100000" period="exp(0.00473)" departLane="random" departSpeed="max"/>
+    <flow id="fc47" type="hv" from="ar_rb_s_in" to="SC_WB_4" begin="0" end="100000" period="exp(0.00473)" departLane="random" departSpeed="max"/>
+    <flow id="fc48" type="hv" from="ar_rb_gym_out" to="SC_NB_1" begin="0" end="100000" period="exp(0.00473)" departLane="random" departSpeed="max"/>
+    <flow id="fc49" type="hv" from="ar_rb_gym_out" to="ar_yg_a1_out" begin="0" end="100000" period="exp(0.00473)" departLane="random" departSpeed="max"/>
+    <flow id="fc50" type="hv" from="ar_rb_gym_out" to="WBf_g" begin="0" end="100000" period="exp(0.00473)" departLane="random" departSpeed="max"/>
+    <flow id="fc51" type="hv" from="ar_hq_gate_out" to="WBf_g" begin="0" end="100000" period="exp(0.00473)" departLane="random" departSpeed="max"/>
+    <flow id="fc52" type="hv" from="ar_hq_gate_out" to="SC_WB_4" begin="0" end="100000" period="exp(0.00473)" departLane="random" departSpeed="max"/>
+    <flow id="fc53" type="hv" from="ar_hq_gate_out" to="ar_ys_a0_out" begin="0" end="100000" period="exp(0.00473)" departLane="random" departSpeed="max"/>
+    <flow id="fr0" type="hv_round" from="ar_rb_s_in" to="ar_rb_gym_in" begin="0" end="100000" period="exp(0.00833)" departLane="best" departSpeed="max"/>
+    <flow id="fr1" type="hv_round" from="ar_rb_gym_out" to="ar_rb_s_out" begin="0" end="100000" period="exp(0.00833)" departLane="best" departSpeed="max"/>
+    <flow id="fr2" type="hv_round" from="ar_rb_b_app" to="ar_rb_gym_in" begin="0" end="100000" period="exp(0.00833)" departLane="best" departSpeed="max"/>
+    <flow id="fr3" type="hv_round" from="ar_rb_b_app" to="ar_rb_s_out" begin="0" end="100000" period="exp(0.00833)" departLane="best" departSpeed="max"/>
+    <flow id="fr4" type="hv_round" from="ar_rb_s_in" to="ar_rb_f_dep" begin="0" end="100000" period="exp(0.00833)" departLane="best" departSpeed="max"/>
+    <flow id="fr5" type="hv_round" from="ar_rb_gym_out" to="ar_rb_f_dep" begin="0" end="100000" period="exp(0.00833)" departLane="best" departSpeed="max"/>
+    <flow id="fr6" type="hv_round" from="ar_rb_s_in" to="WBf_g" begin="0" end="100000" period="exp(0.00833)" departLane="best" departSpeed="max"/>
+    <flow id="fr7" type="hv_round" from="ar_rb_gym_out" to="WBf_g" begin="0" end="100000" period="exp(0.00833)" departLane="best" departSpeed="max"/>
+    <flow id="fr8" type="hv_round" from="EBf_a0" to="ar_rb_gym_in" begin="0" end="100000" period="exp(0.00833)" departLane="best" departSpeed="max"/>
+    <flow id="fr9" type="hv_round" from="EBf_a0" to="ar_rb_s_out" begin="0" end="100000" period="exp(0.00833)" departLane="best" departSpeed="max"/>
+    <flow id="fq0" type="hv_queue" from="EBf_a0" to="ar_yg_a0_out" begin="0" end="100000" period="exp(0.02778)" departLane="best" departSpeed="max"/>
+    <flow id="fq1" type="hv_queue" from="ar_hq_gate_out" to="ar_yg_a0_out" begin="0" end="100000" period="exp(0.02778)" departLane="best" departSpeed="max"/>
+    <flow id="fq2" type="hv_queue" from="ar_gb_nb" to="ar_ns_f3" via="SC_NB_EB" begin="0" end="100000" period="exp(0.02778)" departLane="best" departSpeed="max"/>
+</routes>

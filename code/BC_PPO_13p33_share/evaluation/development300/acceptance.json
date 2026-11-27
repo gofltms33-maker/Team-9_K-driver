@@ -1,0 +1,27 @@
+{
+  "episodes": 300,
+  "completed_records": 300,
+  "end_reason_counts": {
+    "arrival": 255,
+    "collision": 40,
+    "route_blocked": 4,
+    "red_light": 1
+  },
+  "collision_episodes": 40,
+  "arrival_episodes": 255,
+  "collision_rate": 0.13333333333333333,
+  "arrival_rate": 0.85,
+  "red_light_rate": 0.0033333333333333335,
+  "teleport_rate": 0.0,
+  "evaluation_error_rate": 0.0,
+  "failed_episodes": 45,
+  "evaluation_valid": true,
+  "course_profile_required": true,
+  "course_profile_verified": true,
+  "physical_progress_input_enabled": false,
+  "collision_target_met": false,
+  "completion_target_met": false,
+  "perfect_completion_observed": false,
+  "task_target_met": false,
+  "note": "All planned seeds are in the denominator; errors are failures. Finite-sample results do not guarantee future success."
+}

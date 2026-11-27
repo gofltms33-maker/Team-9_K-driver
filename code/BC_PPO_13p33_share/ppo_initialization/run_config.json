@@ -1,0 +1,384 @@
+{
+  "base": "fixture",
+  "hparams": {
+    "lr": 2e-06,
+    "n_steps": 2048,
+    "n_epochs": 2,
+    "minibatch_size": 128,
+    "gamma": 0.999,
+    "gae_lambda": 0.95,
+    "target_kl": 0.002,
+    "clip_eps": 0.03,
+    "value_coef": 0.5,
+    "entropy_coef": 0.0,
+    "lane_entropy_coef": 0.002,
+    "max_grad_norm": 0.5,
+    "normalize_advantage": true,
+    "hidden_sizes": [
+      256,
+      256
+    ],
+    "activation": "relu",
+    "policy_type": "invariant_metric_set_hybrid",
+    "lane_keep_bias": 1.0,
+    "init_log_std": -0.5,
+    "seed": 353,
+    "device": "auto"
+  },
+  "observation": {
+    "lane_guidance": true,
+    "next_junction_guidance": true,
+    "front_safety_features": true,
+    "visibility": 120.0,
+    "nav_horizon": 300,
+    "signal_horizon": 250,
+    "density_veh_length": 7.5,
+    "signal_safety_feature": true,
+    "nearby_traffic_features": true,
+    "nearby_traffic_count": 8,
+    "retain_overlap_neighbors": true,
+    "semantic_lane_branches": true,
+    "redact_lane_guidance": true
+  },
+  "action": {
+    "lane_change_safety": {
+      "enabled": false,
+      "min_front_gap": 3.0,
+      "min_rear_gap": 3.0,
+      "front_tau": 0.15,
+      "rear_tau": 0.3,
+      "approach_horizon": 0.6,
+      "spawn_protect": 60.0
+    },
+    "dim": 2,
+    "accel_index": 0,
+    "lane_change_index": 1,
+    "lane_change_values": [
+      -1,
+      0,
+      1
+    ],
+    "lane_change_threshold": 0.5,
+    "lane_change_duration": 1.0,
+    "lane_change_cooldown_s": 0.0,
+    "policy_speed_mode": 96,
+    "policy_lane_change_mode": 0
+  },
+  "simulation": {
+    "step_length": 0.5,
+    "max_steps": 2000,
+    "stuck_timeout_s": 180.0,
+    "idle_grace_s": 3.0,
+    "idle_timeout_s": 30.0,
+    "warmup_steps": 4,
+    "gui_zoom": 4000.0,
+    "gui_delay": 100.0,
+    "gui_view_width": 200.0,
+    "gui_track_ego": true
+  },
+  "reward": {
+    "speed_weight": 0.0,
+    "progress_weight": 0.01,
+    "overspeed_penalty": 0.5,
+    "close_gap_threshold": 3.0,
+    "close_gap_time_headway": 1.0,
+    "close_gap_penalty": 0.1,
+    "collision_penalty": 300.0,
+    "arrival_bonus": 300.0,
+    "red_light_penalty": 300.0,
+    "failure_penalty": 300.0,
+    "idle_penalty": 0.05,
+    "blocked_penalty": 0.0,
+    "blocked_gap": 20.0,
+    "blocked_speed_frac": 0.7,
+    "lane_change_penalty": 0.02,
+    "invalid_action_penalty": 0.002
+  },
+  "protected_hashes": {
+    "fixture\\sumo\\highway.net.xml": "20d6de0afd6233ba60ca3288ae684938eca73a9fab071a9911b205143b7a116b",
+    "fixture\\sumo\\highway.rou.xml": "243272e1a1885b511d538c2580f1051457954d4361ed6d6b9b96d711a97da962"
+  },
+  "map_observation_fix": "Consistent geometric branch descriptions; road topology unchanged",
+  "args": {
+    "init_run": "C:\\Users\\jamie\\team_sumo\\results\\broad_seed_refinement_v112\\b_development_frozen",
+    "output": "C:\\Users\\jamie\\team_sumo\\results\\evidence_guided_refinement_v115\\lateral_ppo",
+    "data": "[WindowsPath('C:/Users/jamie/team_sumo/results/sensor_range_imitation_v97/data_signal250/demonstrations.npz'), WindowsPath('C:/Users/jamie/team_sumo/results/bottleneck_experiments_v102/current_policy_recovery/demonstrations.npz'), WindowsPath('C:/Users/jamie/team_sumo/results/bottleneck_experiments_v102/late_policy_recovery/demonstrations.npz'), WindowsPath('C:/Users/jamie/team_sumo/results/safety_bottleneck_v103/near_failure_recovery/demonstrations.npz'), WindowsPath('C:/Users/jamie/team_sumo/results/safety_bottleneck_v103/round2_recovery/demonstrations.npz'), WindowsPath('C:/Users/jamie/team_sumo/results/diverse_imitation_v107/native_0/demonstrations.npz'), WindowsPath('C:/Users/jamie/team_sumo/results/diverse_imitation_v107/native_1/demonstrations.npz'), WindowsPath('C:/Users/jamie/team_sumo/results/diverse_imitation_v107/native_2/demonstrations.npz'), WindowsPath('C:/Users/jamie/team_sumo/results/diverse_imitation_v107/native_3/demonstrations.npz'), WindowsPath('C:/Users/jamie/team_sumo/results/current_model_refinement_v111/s1_recovery_0/demonstrations.npz'), WindowsPath('C:/Users/jamie/team_sumo/results/current_model_refinement_v111/s1_recovery_1/demonstrations.npz'), WindowsPath('C:/Users/jamie/team_sumo/results/broad_seed_refinement_v112/interaction_recovery/demonstrations.npz'), WindowsPath('C:/Users/jamie/team_sumo/results/broad_seed_refinement_v112/route_recovery/demonstrations.npz')]",
+    "steps": "131072",
+    "rollout": "2048",
+    "epochs": "2",
+    "lr": "2e-06",
+    "critic_lr": "0.0003",
+    "gamma": "0.999",
+    "gae_lambda": "0.95",
+    "clip": "0.03",
+    "target_kl": "0.002",
+    "bc_coef": "0.05",
+    "lane_weight_power": "0.0",
+    "std": "0.03",
+    "lane_temperature": "1.0",
+    "warmup_updates": "4",
+    "eval_every": "16",
+    "eval_episodes": "50",
+    "eval_seed_start": "37400",
+    "route_prefix": "None",
+    "seed": "115",
+    "train_seed_start": "57000",
+    "train_seed_stop": "67000",
+    "reward_scale": "0.02",
+    "collision_penalty": "300.0",
+    "red_light_penalty": "300.0",
+    "failure_penalty": "300.0",
+    "arrival_bonus": "300.0",
+    "selection_collision_limit": "None",
+    "risk_coef": "0.5",
+    "red_braking": "2.0",
+    "red_weight": "2.0",
+    "censored_stop_loss": "True",
+    "suffix_curriculum": "False",
+    "curriculum_warmup_seconds": "600.0",
+    "acceleration_only": "False",
+    "lane_only": "True",
+    "risk_shaping": "potential",
+    "predictive_safety_coef": "0.0",
+    "strict_speed_mode": "True",
+    "predictive_reaction_time": "0.5",
+    "intervention_coef": "0.0",
+    "route_variant": "normal"
+  },
+  "data_sources": [
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\sensor_range_imitation_v97\\data_signal250\\demonstrations.npz",
+      "sha256": "399236a1501f348fcbeef991fe0b8f6a18b549d0c248b3d930c09aef1f21178f"
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\bottleneck_experiments_v102\\current_policy_recovery\\demonstrations.npz",
+      "sha256": "f5ad6bd5ba2511d518332052409dc3313d6d19c7ad2cadd034d819a9948fd1f3"
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\bottleneck_experiments_v102\\late_policy_recovery\\demonstrations.npz",
+      "sha256": "282077b47ac3a7af7f3a10d16022fd97c135eb840dca256ff8262c4d844d0cbb"
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\safety_bottleneck_v103\\near_failure_recovery\\demonstrations.npz",
+      "sha256": "b95bd4758c2dbd15717df17d07a1a2b853bda1efb3a3963b5aea78916846c7e9"
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\safety_bottleneck_v103\\round2_recovery\\demonstrations.npz",
+      "sha256": "eef4ec8a57f4a799191d8c015dc84c27dbe7a3b99261085f13beece20fb2fcc6"
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\diverse_imitation_v107\\native_0\\demonstrations.npz",
+      "sha256": "b47a25210cef91e67e4d776422df25d9b658728366bc6c521a9387e1c2d8acbe"
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\diverse_imitation_v107\\native_1\\demonstrations.npz",
+      "sha256": "7ecaf30bd7fb3d62544bb620180bb406175f684e5598d80c9561201b4aee1487"
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\diverse_imitation_v107\\native_2\\demonstrations.npz",
+      "sha256": "738a20639962a0ad28d5bd6307f406b09c88d9c3c5c56462af1c7950b9709d6d"
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\diverse_imitation_v107\\native_3\\demonstrations.npz",
+      "sha256": "c8495b24d849e8236e59d9956943e5934f6e774c06aac3b968e9b84dd76deb84"
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\current_model_refinement_v111\\s1_recovery_0\\demonstrations.npz",
+      "sha256": "7105179a844e3ac33ea91034ad38180e2c39221ed8c51aa6e828bfc45d9dd460"
+    },
+    {
+      "path": "C:\\Users\\jamie\\team_sumo\\results\\current_model_refinement_v111\\s1_recovery_1\\demonstrations.npz",
+      "sha256": "0a6ea5067c9a26140049b1013e4af44e15d7df2339fd6447617bea2cbe284254"
+    }
+  ],
+  "stage": "Frozen neural candidate; no training updates in this folder",
+  "course_profile": {
+    "version": 1,
+    "status": "unevaluated_initialization",
+    "observation_dim": 104,
+    "redacted_columns": [
+      38,
+      55
+    ],
+    "column_interval": "start inclusive, stop exclusive",
+    "coarse_navigation_columns": [
+      55,
+      60
+    ],
+    "semantic_lane_branches": true,
+    "sumo_speed_mode": 96,
+    "sumo_lane_change_mode": 0,
+    "custom_action_filter": false,
+    "lane_change_cooldown_s": 0.0,
+    "native_driver": false,
+    "automatic_reroute": false,
+    "full_original_route": true,
+    "road_and_traffic_unchanged": true,
+    "source_metrics_valid_for_this_profile": false,
+    "source_claims": {
+      "args": {
+        "init_run": "results\\bc_overlap_e20_v48",
+        "output": "results\\bc_metric_lane_v62",
+        "data": "[WindowsPath('results/demos_current_lane_v58/demonstrations.npz'), WindowsPath('results/demos_junction_v51/demonstrations.npz'), WindowsPath('results/demos_headway_v49/demonstrations.npz')]",
+        "epochs": "18",
+        "lr": "0.0003",
+        "underbrake_weight": "1.0",
+        "eval_episodes": "20",
+        "eval_seed_start": "4200",
+        "nearby_traffic_features": "True",
+        "residual": "False",
+        "launch_weight": "1.0",
+        "residual_penalty": "0.0",
+        "split": "True",
+        "kinematic_features": "True",
+        "censored_stop_loss": "True",
+        "rollout_every": "3",
+        "rollout_episodes": "10",
+        "checkpoint_every": "3",
+        "predictive_safety_coef": "0.0",
+        "train_lanes": "True",
+        "lane_lr": "3e-05",
+        "lane_coef": "1.0",
+        "lane_safety_coef": "0.0",
+        "spatial_safety_coef": "0.0",
+        "reference_coef": "0.0",
+        "lane_residual": "False",
+        "lane_weight_power": "0.5",
+        "predictive_reaction_time": "0.5",
+        "set_residual": "True",
+        "lane_reference_coef": "1.0",
+        "predictive_comfort_decel": "5.4",
+        "risk_weighted_reference": "False",
+        "lane_only": "True",
+        "metric_sensors": "True",
+        "route_prefix": "None",
+        "route_variant": "normal"
+      },
+      "stage": "Frozen neural candidate; no training updates in this folder",
+      "evaluation_protocol": {
+        "speedMode": 31,
+        "laneChangeMode": 512,
+        "neural_lane_selection": true,
+        "custom_driving_rules": false,
+        "road_or_traffic_edits": false,
+        "native_safety_constraints": true
+      },
+      "frozen_checkpoint": {
+        "source": "results\\native_constraints_v66",
+        "checkpoint": "model.pt",
+        "sha256": "1e5794c4551d7c729547beebdb3beb1d91824ea2ddbf43dd3cc2dfcafcd76742"
+      },
+      "initialization": {
+        "run": "results\\bc_overlap_e20_v48",
+        "model_sha256": "2547bbd9993d6aa18f71b98b2c15b194f0e972125c32c5449dccf599b6b6040e"
+      },
+      "bc_refinement": {
+        "acceleration_lr": 0.0,
+        "lane_lr": 3e-05,
+        "train_lanes": true,
+        "lane_only": true,
+        "frozen_navigation_backbone": true,
+        "predictive_safety_coefficient": 0.0,
+        "comfort_decel": 5.4,
+        "reaction_time": 0.5,
+        "reference_coefficient": 0.0,
+        "lane_reference_coefficient": 1.0,
+        "risk_weighted_reference": false
+      },
+      "data_sources": [
+        {
+          "path": "results\\demos_current_lane_v58\\demonstrations.npz",
+          "sha256": "c3214e1abf6990fa7ce88b5661bd8ae85fe52773701c77e13ecc43ec7e93ec7a"
+        },
+        {
+          "path": "results\\demos_junction_v51\\demonstrations.npz",
+          "sha256": "f65e92c95098df6f0bbd411c07e1dbe5d6ff308283ef355158f8b8abb99696a3"
+        },
+        {
+          "path": "results\\demos_headway_v49\\demonstrations.npz",
+          "sha256": "6de943e8c815743caea34c61cbcfb21f28ebdf0739b505fea70fa69d418f6223"
+        }
+      ]
+    },
+    "source_config_sha256": "49a488787babf54315a1d6218f44e523e1bacff7f2b357969c1ba51585ec6025"
+  },
+  "initialization": {
+    "run": "C:\\Users\\jamie\\team_sumo\\results\\broad_seed_refinement_v112\\b_development_frozen",
+    "model_sha256": "19416dfff3a6e9a099f3e78eac8f069d7a4e36bb7b695e345c2d8ffa27d72bab"
+  },
+  "bc_refinement": {
+    "acceleration_lr": 0.0,
+    "lane_lr": 1e-05,
+    "train_lanes": true,
+    "lane_only": true,
+    "train_backbone": false,
+    "frozen_navigation_backbone": true,
+    "train_lane_backbone": false,
+    "train_accel_backbone": false,
+    "sampler": "mixed_lane_classes_and_natural_rows",
+    "lane_class_fraction": 0.01,
+    "brake_weight_scope": "hazard",
+    "underbrake_weight": 2.0,
+    "stop_hold_fraction": 0.0,
+    "spatial_safety_horizon": 2.0,
+    "stop_hold_weight": 1.0,
+    "priority_fraction": 0.25,
+    "class_weight_distribution": "unweighted; batch proportions explicit",
+    "predictive_safety_coefficient": 0.0,
+    "comfort_decel": 5.4,
+    "reaction_time": 0.5,
+    "reference_coefficient": 0.01,
+    "lane_reference_coefficient": 0.01,
+    "risk_weighted_reference": false,
+    "predictive_safety_physical_scales": {
+      "vmax": 33.33,
+      "visibility": 120.0,
+      "signal_horizon": 250.0,
+      "max_accel": 5.4,
+      "max_decel": 5.4,
+      "dt": 0.5,
+      "speed_cap": 33.33
+    }
+  },
+  "navigation_supervision": {
+    "lane_weight_power": 0.0,
+    "lane_class_fraction": 0.01,
+    "priority_fraction": 0.25,
+    "source": "C:\\Users\\jamie\\team_sumo\\results\\current_model_refinement_v111\\adapter",
+    "method": "BC"
+  },
+  "frozen_checkpoint": {
+    "source": "C:\\Users\\jamie\\team_sumo\\results\\overnight_adaptive_v118\\round_002\\baseline_development_frozen",
+    "checkpoint": "model.pt",
+    "sha256": "b86a3f1a7d2af5c0f0bd801e8996e4ad4c0c94fff39d4c653862eefb6c1705cc"
+  },
+  "fine_tuning": {
+    "separate_critic": true,
+    "reward_scale": 0.02,
+    "observed_risk_cost": true,
+    "lane_temperature": 1.0,
+    "redacted_lane_arrow_risk_removed": true,
+    "fixed_acceleration_std": 0.03,
+    "bc_coefficient": 0.05,
+    "red_braking": 2.0,
+    "red_weight": 2.0,
+    "training_suffix_curriculum": false,
+    "acceleration_only": false,
+    "lane_only": true,
+    "risk_shaping": "potential",
+    "predictive_safety_coefficient": 0.0,
+    "predictive_reaction_time": 0.5,
+    "native_speed_intervention_coefficient": 0.0,
+    "native_speed_intervention_normalization": "abs(requested-realized)/(max(accel,decel)*dt), capped at 1; training reward only",
+    "selection_collision_limit": null,
+    "curriculum_warmup_seconds_max": 600.0,
+    "train_seed_range": [
+      57000,
+      67000
+    ],
+    "selection_seeds": [
+      37400,
+      37449
+    ]
+  }
+}

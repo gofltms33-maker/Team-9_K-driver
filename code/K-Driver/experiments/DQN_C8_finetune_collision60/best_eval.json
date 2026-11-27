@@ -1,0 +1,6 @@
+{
+ "steps": 153600,
+ "success_rate": 0.7,
+ "collision_rate": 0.1,
+ "red_light_rate": 0.2
+}

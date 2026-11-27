@@ -1,0 +1,92 @@
+{
+  "model_sha256": "9b90a6177098b2f87bd443dc347eff365ae26afa724d7025a60c024e8acd13b6",
+  "source_origins": {
+    "physical_layout.py": "historical source snapshot: results\\overnight_adaptive_v118\\round_004\\ppo\\source\\physical_layout.py",
+    "sensor_history.py": "historical source snapshot: results\\overnight_adaptive_v118\\round_004\\ppo\\source\\sensor_history.py",
+    "train_warmstart_ppo.py": "historical source snapshot: results\\overnight_adaptive_v118\\round_004\\ppo\\source\\train_warmstart_ppo.py",
+    "algorithms/ppo.py": "historical source snapshot: results\\overnight_adaptive_v118\\round_004\\ppo\\source\\algorithms\\ppo.py",
+    "env/sumo_env.py": "historical source snapshot: results\\overnight_adaptive_v118\\round_004\\ppo\\source\\env\\sumo_env.py",
+    "utils/buffer.py": "historical source snapshot: results\\overnight_adaptive_v118\\round_004\\ppo\\source\\utils\\buffer.py",
+    "utils/networks.py": "historical source snapshot: results\\overnight_adaptive_v118\\round_004\\ppo\\source\\utils\\networks.py",
+    "action_labels.py": "historical source snapshot: results\\overnight_adaptive_v118\\round_004\\ppo_development_frozen\\evaluation_source\\action_labels.py",
+    "evaluate_imitation.py": "historical source snapshot: results\\overnight_adaptive_v118\\round_004\\ppo_development_frozen\\evaluation_source\\evaluate_imitation.py",
+    "env/mdp_config.py": "historical source snapshot: results\\overnight_adaptive_v118\\round_004\\ppo_development_frozen\\evaluation_source\\env\\mdp_config.py",
+    "train_local_bc.py": "historical run copy: results\\diverse_imitation_v107\\physical_cost\\source\\train_local_bc.py",
+    "collect_audited_course_data.py": "historical source snapshot: results\\overnight_adaptive_v118\\round_004\\side_1\\source\\collect_audited_course_data.py",
+    "train_bc_ppo.py": "historical source snapshot: results\\overnight_adaptive_v118\\round_004\\side_1\\source\\train_bc_ppo.py",
+    "train_trust_region_correction.py": "historical run copy: results\\overnight_adaptive_v118\\round_004\\lateral\\train_trust_region_correction.py",
+    "run_overnight_adaptive.py": "historical run copy: results\\overnight_adaptive_v118\\run_overnight_adaptive.py",
+    "train.py": "current local dependency",
+    "utils/evaluator.py": "current local dependency",
+    "env/step_recorder.py": "current local dependency",
+    "utils/logger.py": "current local dependency",
+    "env/road_builder.py": "current local dependency",
+    "env/roads/loop_full.py": "current local dependency",
+    "env/roads/traffic_mix.py": "current local dependency",
+    "env/roads/__init__.py": "current local dependency",
+    "env/roads/yangjae_fix.py": "current local dependency",
+    "env/roads/taper.py": "current local dependency",
+    "env/roads/yangjae_ic.py": "current local dependency",
+    "env/roads/yangjae_data.py": "current local dependency",
+    "env/roads/gyeongbu.py": "current local dependency",
+    "env/roads/arterials.py": "current local dependency",
+    "env/roads/seocho_ic.py": "current local dependency",
+    "env/roads/connectors.py": "current local dependency",
+    "env/roads/wonji.py": "current local dependency",
+    "env/roads/construction.py": "current local dependency",
+    "env/roads/hq.py": "current local dependency",
+    "env/roads/osm_corridor.py": "current local dependency",
+    "env/road_config.py": "original frozen experiment fixture",
+    "env/__init__.py": "current local dependency",
+    "run_validated_imitation.py": "current local dependency",
+    "freeze_candidate.py": "current local dependency",
+    "run_navigation_preserving_safety.py": "current local dependency",
+    "run_nine_hour_safety.py": "current local dependency",
+    "run_sequential_safety.py": "current local dependency",
+    "run_collision_state_learning.py": "current local dependency",
+    "parallel_evaluate.py": "current local dependency",
+    "run_broad_seed_refinement.py": "current local dependency",
+    "route_variants.py": "current local dependency"
+  },
+  "recorded_runtime_hash_checks": {
+    "env\\sumo_env.py": {
+      "expected": "16e40565dedb23b5b312c7b8d928d1eee9bcf63dbc5badc3cf179bd69659d250",
+      "actual": "16e40565dedb23b5b312c7b8d928d1eee9bcf63dbc5badc3cf179bd69659d250",
+      "matched": true
+    },
+    "env\\mdp_config.py": {
+      "expected": "746fa4c8d7b503905ecb760296653eb0df2c3cdd0a00d23d2684ffcd21bbc292",
+      "actual": "746fa4c8d7b503905ecb760296653eb0df2c3cdd0a00d23d2684ffcd21bbc292",
+      "matched": true
+    },
+    "env\\road_config.py": {
+      "expected": "78857c531e3b065cbbf4101fe2708bc0871a90cdfd5361ea4335604fe42d13d5",
+      "actual": "78857c531e3b065cbbf4101fe2708bc0871a90cdfd5361ea4335604fe42d13d5",
+      "matched": true
+    },
+    "env\\roads\\traffic_mix.py": {
+      "expected": "b4dc52c9b324cf6d05f7598b30d1931ae6884c5fa6f83eb82982c646669fc3d8",
+      "actual": "b4dc52c9b324cf6d05f7598b30d1931ae6884c5fa6f83eb82982c646669fc3d8",
+      "matched": true
+    },
+    "utils\\networks.py": {
+      "expected": "b6bda5c5baaf28c99492b2f5535088880307ca62bce3b0390dfe58b3462a6da8",
+      "actual": "b6bda5c5baaf28c99492b2f5535088880307ca62bce3b0390dfe58b3462a6da8",
+      "matched": true
+    },
+    "algorithms\\ppo.py": {
+      "expected": "3f42c0da5a94ebde6909d3beda2949623f3dea500112680688acf6cff94b6824",
+      "actual": "3f42c0da5a94ebde6909d3beda2949623f3dea500112680688acf6cff94b6824",
+      "matched": true
+    }
+  },
+  "source_environment": "historical prefillOFF fixture",
+  "local_python_versions": {
+    "torch": "2.12.1",
+    "numpy": "2.5.0",
+    "gymnasium": "1.3.0",
+    "tensorboard": "2.21.0"
+  },
+  "full_training_reproduction_possible": false,
+  "reason": "Demonstration datasets are not included; some early datasets no longer exist locally."
+}
